@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  festival_id: 1
+  text: MyText
+
+two:
+  festival_id: 1
+  text: MyText

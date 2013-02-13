@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  coord: MyString
+  logo_url: MyString
+  back_url: MyString
+  map_url: MyString
+
+two:
+  name: MyString
+  coord: MyString
+  logo_url: MyString
+  back_url: MyString
+  map_url: MyString

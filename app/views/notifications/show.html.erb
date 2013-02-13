@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Festival:</b>
+  <%= Festival.find(@notification.festival_id).name %>
+</p>
+
+<p>
+  <b>Text:</b>
+  <%= @notification.text %>
+</p>
+
+
+<%= link_to 'Edit', edit_notification_path(@notification) %> |
+<%= link_to 'Send New Notification', new_notification_path(:festival => Festival.find(@notification.festival_id)) %> |
+<%= link_to 'Back to Festival', Festival.find(@notification.festival_id) %>

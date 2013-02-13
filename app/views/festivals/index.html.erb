@@ -1,0 +1,44 @@
+<div id="mainContainer">
+    <h1>Our Festivals</h1>
+
+    <div id="newFestivalButton" class="roundButton">
+      <% if session[:user_id] %>
+      <%= link_to 'New Festival', new_festival_path %>
+      <% end %>
+    </div>
+
+    <table id="festivalsTable">
+      <tr>
+        <th>Logo</th>
+        <th>Name</th>
+        <th>Coordinates</th>
+        <th>Template</th>
+        <th>Map</th>
+        <% if session[:user_id] %>
+            <th></th>
+            <th></th>
+            <th></th>
+        <% end %>
+
+      </tr>
+
+    <% @festivals.each do |festival| %>
+      <tr>
+        <td><%= image_tag(festival.logo, :class => 'logo_url') %></td>
+        <td><%= festival.name %></td>
+        <td><%= festival.coordinates %></td>
+        <td><%= festival.template %></td>
+        <td><%= image_tag(festival.map, :class => 'map_url') %></td>
+
+        <% if session[:user_id] %>
+            <td><%= link_to 'Show', festival %></td>
+            <td><%= link_to 'Edit', edit_festival_path(festival) %></td>
+            <td><%= link_to 'Destroy', festival, confirm: 'Are You Sure?', method: :delete %></td>
+        <% end %>
+      </tr>
+    <% end %>
+    </table>
+
+    <br />
+
+</div>

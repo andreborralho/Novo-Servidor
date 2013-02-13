@@ -1,0 +1,31 @@
+<h1>Countries</h1>
+
+<div id="newCountryButton" class="roundButton">
+  <% if session[:user_id] %>
+    <%= link_to 'New Country', new_country_path %>
+  <% end %>
+</div>
+
+<table id="countriesTable">
+  <tr>
+    <th>Name</th>
+    <th>Flag</th>
+    <% if session[:user_id] %>
+        <th></th>
+        <th></th>
+        <th></th>
+    <% end %>
+  </tr>
+
+<% @countries.each do |country| %>
+  <tr>
+    <td><%= country.name %></td>
+    <td><%= image_tag(country.flag) %></td>
+    <% if session[:user_id] %>
+        <td><%= link_to 'Show', country %></td>
+        <td><%= link_to 'Edit', edit_country_path(country) %></td>
+        <td><%= link_to 'Destroy', country, confirm: 'Are you sure?', method: :delete %></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>

@@ -1,0 +1,50 @@
+<%= form_for(@festival) do |f| %>
+  <% if @festival.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@festival.errors.count, "error") %> prohibited this festival from being saved:</h2>
+
+      <ul>
+      <% @festival.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div id="festivalNameField" class="festivalField">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div id="festivalCoordinateField" class="festivalField">
+    <%= f.label :coordinates %><br />
+    <%= f.text_field :coordinates %>
+  </div>
+    <div class="urlField festivalField">
+      <%= f.label :city %><br />
+      <%= f.text_field :city %>
+    </div>
+  <div class="urlField festivalField">
+    <%= f.label :Logo %><br />
+    <%= f.text_field :logo %>
+  </div>
+  <div class="urlField festivalField">
+    <%= f.label "Background Url" %><br />
+    <%= f.text_field :template %>
+  </div>
+  <div class="urlField festivalField">
+    <%= f.label "Map" %><br />
+    <%= f.text_field :map %>
+  </div>
+    <div id="ticketsField" class="festivalField">
+      <%= f.label :tickets %><br />
+      <%= f.text_area :tickets %>
+    </div>
+    <div id="transportsField" class="festivalField">
+      <%= f.label :transports %><br />
+      <%= f.text_area :transports %>
+    </div>
+
+  <div id="festivalSubmit" class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

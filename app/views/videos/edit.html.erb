@@ -1,0 +1,9 @@
+<h1>Editing video</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @video %> |
+<%= link_to 'Back', {:action => "index", :controller =>
+        "videos", :id => @video.show_id} %>
+
+

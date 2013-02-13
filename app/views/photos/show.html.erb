@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Show:</b>
+  <%= @photo.show %>
+</p>
+
+<p>
+  <b>Small:</b>
+  <%= @photo.small %>
+</p>
+
+<p>
+  <b>Large:</b>
+  <%= @photo.large %>
+</p>
+
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>

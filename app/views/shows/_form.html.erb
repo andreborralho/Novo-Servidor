@@ -1,0 +1,37 @@
+<%= form_for(@show) do |f| %>
+  <% if @show.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@show.errors.count, "error") %> prohibited this show from being saved:</h2>
+
+      <ul>
+      <% @show.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div id="showName" class="showField">
+        <%= f.label :name %><br />
+        <%= f.text_field :name %>
+    </div>
+
+    <div class="showField">
+        <%= f.label :day %><br />
+        <%= f.select :day_id, $days.collect{ |d| [d.date, d.id]} %>
+    </div>
+
+    <div class="showField">
+        <%= f.label :time %><br />
+        <%= f.time_select :time %>
+    </div>
+
+    <div class="showField">
+        <%= f.label :stage %><br />
+        <%= f.select :stage_id, $stages.collect{ |s| [s.name, s.id] } %>
+    </div>
+
+    <div id="showSubmit" class="actions">
+        <%= f.submit %>
+    </div>
+<% end %>

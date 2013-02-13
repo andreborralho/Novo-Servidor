@@ -1,0 +1,7 @@
+
+<p>
+    <%= stage.name %>
+    <%= link_to 'Remove', [Festival.find(stage.festival_id), stage],
+              :confirm => 'Are you sure?',
+              :method => :delete%>
+</p>

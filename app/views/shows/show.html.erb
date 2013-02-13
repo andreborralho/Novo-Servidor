@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<p>
+  <b>Name:</b>
+  <%= @show.name %>
+</p>
+
+
+
+<p>
+  <b>Date:</b>
+  <%= @show.day.date %>
+</p>
+
+<p>
+  <b>Stage:</b>
+  <%= @show.stage.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_show_path(@show) %> |
+<%= link_to 'Add New Show', new_show_path(:festival => @show.festival_id) %> |
+<%= link_to 'Back to Festival', festival_path(@show.festival_id) %>

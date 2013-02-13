@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FestivAll</title>
+    <%= stylesheet_link_tag    "festivals", :media => "all" %>
+    <%= stylesheet_link_tag    "sessions", :media => "all" %>
+    <%= stylesheet_link_tag    "notifications", :media => "all" %>
+    <%= stylesheet_link_tag    "show", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+</head>
+<body>
+    <div id="wrapper">
+    <% if session[:user_id] %>
+
+        <div id="logoutContainer">
+            <h3>User: <%= User.find_by_id(session[:user_id]).name %></h3>
+            <%= button_to 'Logout', logout_path, :method => :delete %>
+        </div>
+    <% end %>
+
+    <div id="logo">
+      <%= image_tag("Logo Festivall.png", :class => 'logo') %>
+    </div>
+
+    <%= yield %>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+<p>
+    <%= day.date %> &nbsp;&nbsp;&nbsp;&nbsp;
+
+  <% if day.opening_time %>
+        <%= day.opening_time.strftime('%H:%M:%S') %>
+  <% end %>
+  <% if day.closing_time %>
+        to
+        <%= day.closing_time.strftime('%H:%M:%S') %>
+  <% end %>
+
+    <%= link_to 'Remove', [Festival.find(day.festival_id), day],
+    :confirm => 'Are you sure?',
+    :method => :delete%>
+</p>

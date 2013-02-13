@@ -1,0 +1,10 @@
+<h1>Listing Stages</h1>
+
+<% @stages.each do |stage| %>
+
+    <p><%= stage.name %></p>
+<% end %>
+
+<br />
+
+<%= link_to 'New Festival', new_festival_path %>

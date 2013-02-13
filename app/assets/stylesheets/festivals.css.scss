@@ -1,0 +1,438 @@
+// Place all the styles related to the Festivals controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+    height: 100%;
+}
+
+body{
+  /* IE10 */
+  background-image: -ms-radial-gradient(center top, circle farthest-corner, #309EF2 0%, #16486E 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-radial-gradient(center top, circle farthest-corner, #309EF2 0%, #16486E 100%);
+  /* Opera */
+  background-image: -o-radial-gradient(center top, circle farthest-corner, #309EF2 0%, #16486E 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(radial, center top, 0, center top, 567, color-stop(0, #309EF2), color-stop(1, #16486E));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-radial-gradient(center top, circle farthest-corner, #309EF2 0%, #16486E 100%);
+  /* Proposed W3C Markup */
+  background-image: radial-gradient(center top, circle farthest-corner, #309EF2 0%, #16486E 100%);
+
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+#wrapper{
+  width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+#logo{
+  width: 70%;
+  margin: 20px auto 0 auto;
+  text-align: center;
+
+}
+#festival_h1{
+  width: 55%;
+  float: left;
+}
+.country_flag{
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-left: 10%;
+}
+
+.roundDiv{
+  border: 1px solid #5F5A59;
+  float: left;
+
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+
+  background-image: -ms-linear-gradient(top, #F5F5F5 0%, #BEBECC 100%);
+  background-image: -moz-linear-gradient(top, #F5F5F5 0%, #BEBECC 100%);
+  background-image: -o-linear-gradient(top, #F5F5F5 0%, #BEBECC 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F5F5F5), color-stop(1, #BEBECC));
+  background-image: -webkit-linear-gradient(top, #F5F5F5 0%, #BEBECC 100%);
+  background-image: linear-gradient(top, #F5F5F5 0%, #BEBECC 100%);
+}
+
+#mainContainer{
+  width: 80%;
+  margin: 0 auto;
+}
+
+#links{
+  float: right;
+  width: 585px;
+  margin-left: 2%;
+  margin-bottom: 1px;
+  text-align: center;
+  padding-left: 8px;
+}
+
+#newFestivalButton{
+  width: 230px;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  float: right;
+}
+#newCountryButton{
+  width: 130px;
+  margin-top:-30px;
+  margin-bottom: 10px;
+  float: right;
+}
+
+.backLink{
+  width: 150px;
+  float: right;
+  position: absolute;
+  margin-left: 58%;
+  margin-top: -50px;
+}
+
+.backToFestivalsLink{
+  width: 190px;
+  float: right;
+  position: absolute;
+  margin-left: 58%;
+  margin-top: -50px;
+}
+
+
+.roundButton{
+  text-align: center;
+  padding: 5px;
+  height: 20px;
+  font-weight: bold;
+  border: 1px solid #5F5A59;
+
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+
+  background-image: -ms-linear-gradient(top, #F5F5F5 0%, #BEBECC 100%);
+  background-image: -moz-linear-gradient(top, #F5F5F5 0%, #BEBECC 100%);
+  background-image: -o-linear-gradient(top, #F5F5F5 0%, #BEBECC 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F5F5F5), color-stop(1, #BEBECC));
+  background-image: -webkit-linear-gradient(top, #F5F5F5 0%, #BEBECC 100%);
+  background-image: linear-gradient(top, #F5F5F5 0%, #BEBECC 100%);
+}
+#festivalInfo{
+  float: left;
+  width: 984px;
+  border-bottom: 1px solid #cccccc;
+  padding: 0 8px 5px 8px;
+}
+#festival_info{
+  width: 40%;
+  float: left;
+}
+#festival_imgs{
+  width: 58%;
+  float: left;
+}
+#festival_imgs div{
+  width: 30%;
+  float: left;
+}
+#festival_imgs img{
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+
+.map{
+  width: 200px !important;
+}
+#festival_tickets_transports{
+  float: left;
+  width: 100%;
+}
+
+#festivalTitle{
+  font-size: 24px;
+}
+
+#days, #stages{
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+}
+#list_days{
+  width: 40%;
+  float: left;
+  padding-left: 8px;
+  border-right: 1px solid #cccccc;
+
+}
+#days_form{
+  width: 57%;
+  height: 180px;
+  float: left;
+  margin-left: 1%;
+  padding-left: 8px;
+}
+
+#list_stages{
+  width: 40%;
+  float: left;
+  padding-left: 8px;
+  border-right: 1px solid #cccccc;
+}
+#stages_form{
+  width: 57%;
+  height: 180px;
+  float: left;
+  margin-left: 1%;
+  padding-left: 8px;
+}
+
+#shows{
+  float: left;
+  width: 595px;
+  padding-left: 8px;
+  border: 1px solid #5F5A59;
+  max-height: 443px;
+  overflow: auto;
+  margin-left: 2%;
+
+}
+
+#days a, #stages a{
+  float: right;
+  padding-right: 10%;
+}
+
+.actions input{
+  float: none;
+  display: block;
+  width: 150px;
+  margin: 19.5px auto;
+  height: 30px;
+  color: #333333;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 110%;
+}
+
+.field input{
+  height: 25px;
+  width: 95%;
+}
+
+#days select{
+  height: 25px;
+  color: #333333;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 110%;
+  margin-bottom: 6px;
+}
+#day_date_2i{
+  width: 30%;
+}
+
+#notifications, #shows_form{
+  float: left;
+  width: 984px;
+  height: 180px;
+  border-bottom: 1px solid #cccccc;
+  padding: 0 8px;
+}
+
+
+#lineUp{
+  float: left;
+  width: 984px;
+  padding: 0 8px;
+}
+
+#festivalsTable, #countriesTable{
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+  border: 1px solid #5F5A59;
+
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+
+  /* IE10 */
+  background-image: -ms-linear-gradient(top, #F5F5F5 0%, #BEBECC 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, #F5F5F5 0%, #BEBECC 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top, #F5F5F5 0%, #BEBECC 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F5F5F5), color-stop(1, #BEBECC));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #F5F5F5 0%, #BEBECC 100%);
+  /* Proposed W3C Markup */
+  background-image: linear-gradient(top, #F5F5F5 0%, #BEBECC 100%);
+}
+
+th{
+  font-size: 105%;
+  border-collapse: collapse;
+}
+td{
+  border: solid;
+  border-width: 1px;
+  height: 100px;
+  border-collapse: collapse;
+}
+
+td img{
+  height: 100px;
+  width: 100px;
+}
+
+
+table tr:last-child td:first-child {
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+table tr:last-child td:last-child {
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#logoutContainer{
+  width: 14%;
+  float: right;
+}
+
+#logoutContainer input{
+  width: 150px;
+  margin: 10px auto;
+  height: 30px;
+  color: #333333;
+  font-size: 110%;
+}
+
+#logoutContainer h3{
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: -4px;
+}
+
+h1{
+  text-align: center;
+}
+
+.showsTable{
+  table-layout: fixed;
+  width: 100%;
+
+}
+
+.dayHeader{
+  width: 160px;
+  height: 50px;
+  font-size: 140%;
+  text-decoration: underline;
+  border-collapse: collapse;
+  margin-top: 15px;
+  margin-bottom: -10px;
+}
+
+.showsTable td{
+  height: 170px;
+  text-align: center;
+  position: relative;
+
+ /* IE10 */
+ background-image: -ms-linear-gradient(bottom left, #F1F7D7 0%, #EBF2DF 100%);
+
+ /* Mozilla Firefox */
+ background-image: -moz-linear-gradient(bottom left, #F1F7D7 0%, #EBF2DF 100%);
+
+ /* Opera */
+ background-image: -o-linear-gradient(bottom left, #F1F7D7 0%, #EBF2DF 100%);
+
+ /* Webkit (Safari/Chrome 10) */
+ background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #F1F7D7), color-stop(1, #EBF2DF));
+
+ /* Webkit (Chrome 11+) */
+ background-image: -webkit-linear-gradient(bottom left, #F1F7D7 0%, #EBF2DF 100%);
+
+ /* Proposed W3C Markup */
+ background-image: linear-gradient(bottom left, #F1F7D7 0%, #EBF2DF 100%);
+}
+
+.stageName{
+  font-weight: bold;
+  font-size: 120%;
+  height: 100%;
+
+  /* IE10 */
+  background-image: -ms-radial-gradient(right top, ellipse cover, #FAFDFF 0%, #D6E384 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-radial-gradient(right top, ellipse cover, #FAFDFF 0%, #D6E384 100%);
+  /* Opera */
+  background-image: -o-radial-gradient(right top, ellipse cover, #FAFDFF 0%, #D6E384 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(radial, right top, 0, right top, 1020, color-stop(0, #FAFDFF), color-stop(1, #D6E384));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-radial-gradient(right top, ellipse cover, #FAFDFF 0%, #D6E384 100%);
+  /* Proposed W3C Markup */
+  background-image: radial-gradient(right top, ellipse cover, #FAFDFF 0%, #D6E384 100%);
+}
+.stageNameText{
+  padding-top: 20%;
+}
+
+.showLinks{
+  valign: bottom;
+  bottom: 0;
+}
+
+.festivalField{
+  float: left;
+  height: 25px;
+  color: #333333;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 110%;
+  margin-bottom: 30px;
+  margin-right: 30px;
+
+}
+
+#festivalNameField input{
+  width: 575px;
+}
+#festivalCoordinateField input{
+  width: 300px;
+}
+
+#festivalSubmit{
+  float: left;
+  width: 100%;
+  margin: 175px auto 0 auto;
+}
+
+.urlField, .urlField input {
+ width: 80%;
+}
+
+#ticketsField textarea, #transportsField textarea{
+  height: 200px;
+  width: 460px;
+}

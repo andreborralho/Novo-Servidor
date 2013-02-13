@@ -1,0 +1,11 @@
+<h1>Listing Days</h1>
+
+<% @days.each do |day| %>
+    <p><%= day.date %></p>
+    <p><%= day.opening_time %></p>
+    <p><%= day.closing_time %></p>
+<% end %>
+
+<br />
+
+<%= link_to 'New Festival', new_festival_path %>

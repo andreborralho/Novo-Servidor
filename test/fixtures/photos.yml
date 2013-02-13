@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  band: 
+  small: MyString
+  large: MyString
+
+two:
+  band: 
+  small: MyString
+  large: MyString
