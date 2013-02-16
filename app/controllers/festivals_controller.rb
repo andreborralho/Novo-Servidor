@@ -6,14 +6,33 @@ class FestivalsController < ApplicationController
  #  @festivals = current_user.festivals
     cache_page(:index)
 
-    if session[:user_id].nil?
-      @festivals = Festival.all
-    elsif User.find_by_id(session[:user_id]).name == 'admin'
-      @festivals = Festival.all
+    if params[:country_id]
+      @country = Country.find(params[:country_id])
+      @festivals = @country.festival
+    elsif params[:last_update]
+      @festivals = Festival.find(:conditions => ["updated_at >= :last_update", { :last_update => params[:last_update] }])
     else
-      @festivals = User.find_by_id(session[:user_id]).festivals
+      @festivals = Festival.all
+      @stages = Stage.all
+      @days = Day.all
+      @shows = Show.all
+      @comments = Comment.all
+      @countries = Country.all
+      @notifications = Notification.all
+      @galleries = Gallery.all
+      @photos = Photo.all
     end
 
+
+    #if session[:user_id].nil?
+     # @festivals = Festival.all
+    #elsif User.find_by_id(session[:user_id]).name == 'admin'
+     # @festivals = Festival.all
+    #else
+     # @festivals = User.find_by_id(session[:user_id]).festivals
+    #end
+
+=begin
     if params[:country_id].nil?
       @festivals = Festival.all
       @stages = Stage.all
@@ -24,14 +43,16 @@ class FestivalsController < ApplicationController
       @notifications = Notification.all
       @galleries = Gallery.all
       @photos = Photo.all
+=end
 
-            #if params[:modified_since].nil?
-             # @festivals.find(updated_at > modified-since
-            #end
-    else
-      @country = Country.find(params[:country_id])
-      @festivals = @country.festivals
-    end
+#      @last_edited_festival = Festival.find(:conditions => :updated_at])
+
+    #elsif params[:last_update]
+     # Festival.find(:conditions => ["updated_at >= :last_update", { :last_update => params[:last_update] }])
+    #else
+     # @country = Country.find(params[:country_id])
+      #@festivals = @country.festivals
+    #end
 
     respond_to do |format|
       format.html # index.html.erb

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130210191902) do
+ActiveRecord::Schema.define(:version => 20130215212833) do
 
   create_table "bands", :force => true do |t|
     t.string   "name"
@@ -20,14 +20,14 @@ ActiveRecord::Schema.define(:version => 20130210191902) do
   end
 
   create_table "comments", :force => true do |t|
-    t.integer  "band_id"
+    t.integer  "show_id"
     t.text     "text"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "name"
   end
 
-  add_index "comments", ["band_id"], :name => "index_comments_on_band_id"
+  add_index "comments", ["show_id"], :name => "index_comments_on_show_id"
 
   create_table "countries", :force => true do |t|
     t.string   "name"
@@ -81,14 +81,14 @@ ActiveRecord::Schema.define(:version => 20130210191902) do
   end
 
   create_table "photos", :force => true do |t|
-    t.integer  "band_id"
+    t.integer  "show_id"
     t.string   "small"
     t.string   "large"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-  add_index "photos", ["band_id"], :name => "index_photos_on_band_id"
+  add_index "photos", ["show_id"], :name => "index_photos_on_band_id"
 
   create_table "shows", :force => true do |t|
     t.string   "name"
@@ -98,6 +98,7 @@ ActiveRecord::Schema.define(:version => 20130210191902) do
     t.time     "time"
     t.integer  "day_id"
     t.integer  "festival_id"
+    t.text     "description"
   end
 
   add_index "shows", ["day_id"], :name => "index_bands_on_day_id"
@@ -123,5 +124,15 @@ ActiveRecord::Schema.define(:version => 20130210191902) do
   end
 
   add_index "users", ["country_id"], :name => "index_users_on_country_id"
+
+  create_table "videos", :force => true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "show_id"
+  end
+
+  add_index "videos", ["show_id"], :name => "index_videos_on_show_id"
 
 end

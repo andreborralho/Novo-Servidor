@@ -58,7 +58,6 @@ class ShowsController < ApplicationController
     @show = Show.find(params[:id])
     @festival = Festival.find(@show.festival.id)
     $stages = @festival.stages
-    puts $stages.name
     $days = @festival.days
   end
 

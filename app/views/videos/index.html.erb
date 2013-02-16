@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Name</th>
     <th>Url</th>
     <th>Show</th>
     <th></th>
@@ -11,6 +12,7 @@
 
 <% @videos.each do |video| %>
   <tr>
+    <td><%= video.name %></td>
     <td><%= video.url %></td>
     <td><%= video.show.name %></td>
     <td><%= link_to 'Show', video %></td>

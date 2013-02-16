@@ -19,6 +19,11 @@
   <%= @show.stage.name %>
 </p>
 
+<p>
+  <b>Stage:</b>
+  <%= @show.description %>
+</p>
+
 
 <%= link_to 'Edit', edit_show_path(@show) %> |
 <%= link_to 'Add New Show', new_show_path(:festival => @show.festival_id) %> |

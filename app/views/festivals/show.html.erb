@@ -1,7 +1,6 @@
 <p id="notice" xmlns="http://www.w3.org/1999/html"><%= notice %></p>
 
 <div id="links" class="roundButton">
-    <%= link_to 'Add a Show', new_show_path(:festival => @festival.id) %> |
     <%= link_to 'Send a Notification', new_notification_path(:festival => @festival.id) %> |
     <%= link_to 'Edit Festival', edit_festival_path(@festival) %> |
     <%= link_to 'Back To Our Festivals List', Country.find(@festival.country_id) %>
