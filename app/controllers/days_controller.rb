@@ -25,7 +25,7 @@ class DaysController < ApplicationController
     @day = @festival.days.find(params[:id])
     @deleted_item = DeletedItem.new
     @deleted_item.element = @day.id
-    @deleted_item.table = :day
+    @deleted_item.table = :days
     @deleted_item.save
     @day.destroy
     redirect_to festival_path(@festival)

@@ -131,7 +131,7 @@ class FestivalsController < ApplicationController
     @festival = Festival.find(params[:id])
     @deleted_item = DeletedItem.new
     @deleted_item.element = @festival.id
-    @deleted_item.table = :festival
+    @deleted_item.table = :festivals
     @deleted_item.save
     @festival.destroy
 

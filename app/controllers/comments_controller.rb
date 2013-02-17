@@ -98,7 +98,7 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
     @deleted_item = DeletedItem.new
     @deleted_item.element = @comment.id
-    @deleted_item.table = :comment
+    @deleted_item.table = :comments
     @deleted_item.save
     @comment.destroy
 

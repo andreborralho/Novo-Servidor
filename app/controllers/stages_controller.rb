@@ -28,7 +28,7 @@ class StagesController < ApplicationController
     @stage = @festival.stages.find(params[:id])
     @deleted_item = DeletedItem.new
     @deleted_item.element = @stage.id
-    @deleted_item.table = :stage
+    @deleted_item.table = :stages
     @deleted_item.save
     @stage.destroy
     redirect_to festival_path(@festival)

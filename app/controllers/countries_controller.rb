@@ -79,7 +79,7 @@ class CountriesController < ApplicationController
     @country = Country.find(params[:id])
     @deleted_item = DeletedItem.new
     @deleted_item.element = @country.id
-    @deleted_item.table = :country
+    @deleted_item.table = :countries
     @deleted_item.save
     @country.destroy
 
