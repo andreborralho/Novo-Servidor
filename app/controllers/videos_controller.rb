@@ -85,6 +85,10 @@ class VideosController < ApplicationController
   # DELETE /videos/1.json
   def destroy
     @video = Video.find(params[:id])
+    @deleted_item = DeletedItem.new
+    @deleted_item.element = @video.id
+    @deleted_item.table = :video
+    @deleted_item.save
     @video.destroy
 
     respond_to do |format|

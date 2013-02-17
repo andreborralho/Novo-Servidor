@@ -23,6 +23,10 @@ class DaysController < ApplicationController
   def destroy
     @festival = Festival.find(params[:festival_id])
     @day = @festival.days.find(params[:id])
+    @deleted_item = DeletedItem.new
+    @deleted_item.element = @day.id
+    @deleted_item.table = :day
+    @deleted_item.save
     @day.destroy
     redirect_to festival_path(@festival)
   end

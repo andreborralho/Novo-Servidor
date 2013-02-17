@@ -9,8 +9,17 @@ class FestivalsController < ApplicationController
     if params[:country_id]
       @country = Country.find(params[:country_id])
       @festivals = @country.festival
-    elsif params[:last_update]
-      @festivals = Festival.find(:conditions => ["updated_at >= :last_update", { :last_update => params[:last_update] }])
+    elsif params[:start_date]
+      @festivals = Festival.all(:conditions => ["updated_at >= ?", params[:start_date]])
+      @stages = Stage.all(:conditions => ["updated_at >= ?", params[:start_date]])
+      @days = Day.all(:conditions => ["updated_at >= ?", params[:start_date]])
+      @shows = Show.all(:conditions => ["updated_at >= ?", params[:start_date]])
+      @comments = Comment.all(:conditions => ["updated_at >= ?", params[:start_date]])
+      @countries = Country.all(:conditions => ["updated_at >= ?", params[:start_date]])
+      #@notifications = Notification.all(:conditions => ["updated_at >= ?", params[:start_date]])
+      @galleries = Gallery.all(:conditions => ["updated_at >= ?", params[:start_date]])
+      @photos = Photo.all(:conditions => ["updated_at >= ?", params[:start_date]])
+      @deleted_items = DeletedItem.all(:conditions => ["updated_at >= ?", params[:start_date]])
     else
       @festivals = Festival.all
       @stages = Stage.all
@@ -18,9 +27,10 @@ class FestivalsController < ApplicationController
       @shows = Show.all
       @comments = Comment.all
       @countries = Country.all
-      @notifications = Notification.all
+      #@notifications = Notification.all
       @galleries = Gallery.all
       @photos = Photo.all
+      @deleted_items = DeletedItem.all
     end
 
 
@@ -32,28 +42,6 @@ class FestivalsController < ApplicationController
      # @festivals = User.find_by_id(session[:user_id]).festivals
     #end
 
-=begin
-    if params[:country_id].nil?
-      @festivals = Festival.all
-      @stages = Stage.all
-      @days = Day.all
-      @shows = Show.all
-      @comments = Comment.all
-      @countries = Country.all
-      @notifications = Notification.all
-      @galleries = Gallery.all
-      @photos = Photo.all
-=end
-
-#      @last_edited_festival = Festival.find(:conditions => :updated_at])
-
-    #elsif params[:last_update]
-     # Festival.find(:conditions => ["updated_at >= :last_update", { :last_update => params[:last_update] }])
-    #else
-     # @country = Country.find(params[:country_id])
-      #@festivals = @country.festivals
-    #end
-
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json =>{
@@ -62,10 +50,11 @@ class FestivalsController < ApplicationController
           :days => @days,
           :countries => @countries,
           :comments => @comments,
-          :notifications => @notifications,
+          #:notifications => @notifications,
           :photos => @photos,
           :galleries => @galleries,
-          :shows => @shows}, :callback => params[:callback] }
+          :shows => @shows,
+          :deleted_items => @deleted_items}, :callback => params[:callback] }
     end
   end
 
@@ -140,6 +129,10 @@ class FestivalsController < ApplicationController
   # DELETE /festivals/1.json
   def destroy
     @festival = Festival.find(params[:id])
+    @deleted_item = DeletedItem.new
+    @deleted_item.element = @festival.id
+    @deleted_item.table = :festival
+    @deleted_item.save
     @festival.destroy
 
     respond_to do |format|

@@ -134,6 +134,10 @@ class ShowsController < ApplicationController
   # DELETE /bands/1.json
   def destroy
     @show = Show.find(params[:id])
+    @deleted_item = DeletedItem.new
+    @deleted_item.element = @show.id
+    @deleted_item.table = :show
+    @deleted_item.save
     @show.destroy
 
     respond_to do |format|

@@ -77,6 +77,10 @@ class CountriesController < ApplicationController
   # DELETE /countries/1.json
   def destroy
     @country = Country.find(params[:id])
+    @deleted_item = DeletedItem.new
+    @deleted_item.element = @country.id
+    @deleted_item.table = :country
+    @deleted_item.save
     @country.destroy
 
     respond_to do |format|

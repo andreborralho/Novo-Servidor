@@ -96,6 +96,10 @@ class CommentsController < ApplicationController
   # DELETE /comments/1.json
   def destroy
     @comment = Comment.find(params[:id])
+    @deleted_item = DeletedItem.new
+    @deleted_item.element = @comment.id
+    @deleted_item.table = :comment
+    @deleted_item.save
     @comment.destroy
 
     respond_to do |format|

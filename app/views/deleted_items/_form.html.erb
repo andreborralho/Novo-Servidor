@@ -1,0 +1,25 @@
+<%= form_for(@deleted_item) do |f| %>
+  <% if @deleted_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@deleted_item.errors.count, "error") %> prohibited this deleted_item from being saved:</h2>
+
+      <ul>
+      <% @deleted_item.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :element %><br />
+    <%= f.number_field :element %>
+  </div>
+  <div class="field">
+    <%= f.label :table %><br />
+    <%= f.text_field :table %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -75,6 +75,10 @@ class NotificationsController < ApplicationController
   # DELETE /notifications/1.json
   def destroy
     @notification = Notification.find(params[:id])
+    @deleted_item = DeletedItem.new
+    @deleted_item.element = @notification.id
+    @deleted_item.table = :notification
+    @deleted_item.save
     @notification.destroy
 
     respond_to do |format|
