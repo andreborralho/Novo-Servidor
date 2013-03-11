@@ -3,7 +3,6 @@ class FestivalsController < ApplicationController
   # GET /festivals
   # GET /festivals.json
   def index
- #  @festivals = current_user.festivals
     cache_page(:index)
 
     if params[:country_id]
@@ -18,7 +17,8 @@ class FestivalsController < ApplicationController
       @countries = Country.all(:conditions => ["updated_at >= ?", params[:start_date]])
       #@notifications = Notification.all(:conditions => ["updated_at >= ?", params[:start_date]])
       @galleries = Gallery.all(:conditions => ["updated_at >= ?", params[:start_date]])
-      @photos = Photo.all(:conditions => ["updated_at >= ?", params[:start_date]])
+      #@photos = Photo.all(:conditions => ["updated_at >= ?", params[:start_date]])
+      @videos = Video.all(:conditions => ["updated_at >= ?", params[:start_date]])
       @deleted_items = DeletedItem.all(:conditions => ["updated_at >= ?", params[:start_date]])
     else
       @festivals = Festival.all
@@ -29,13 +29,11 @@ class FestivalsController < ApplicationController
       @countries = Country.all
       #@notifications = Notification.all
       @galleries = Gallery.all
-      @photos = Photo.all
+      #@photos = Photo.all
+      @videos = Video.all
       @deleted_items = DeletedItem.all
     end
 
-
-    #if session[:user_id].nil?
-     # @festivals = Festival.all
     #elsif User.find_by_id(session[:user_id]).name == 'admin'
      # @festivals = Festival.all
     #else
@@ -51,9 +49,10 @@ class FestivalsController < ApplicationController
           :countries => @countries,
           :comments => @comments,
           #:notifications => @notifications,
-          :photos => @photos,
+          #:photos => @photos,
           :galleries => @galleries,
           :shows => @shows,
+          :videos => @videos,
           :deleted_items => @deleted_items}, :callback => params[:callback] }
     end
   end
@@ -63,8 +62,10 @@ class FestivalsController < ApplicationController
   def show
     @festival = Festival.find(params[:id])
     $current_festival_id = @festival.id
+
     $stages = @festival.stages
     $days = @festival.days
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @festival, :callback => params[:callback] }
@@ -129,14 +130,17 @@ class FestivalsController < ApplicationController
   # DELETE /festivals/1.json
   def destroy
     @festival = Festival.find(params[:id])
-    @deleted_item = DeletedItem.new
-    @deleted_item.element = @festival.id
-    @deleted_item.table = :festivals
-    @deleted_item.save
-    @festival.destroy
+
+    if @festival.shows.count == 0 && @festival.days.count == 0 && @festival.stages.count == 0
+      @deleted_item = DeletedItem.new
+      @deleted_item.element = @festival.id
+      @deleted_item.table = :festival
+      @deleted_item.save
+      @festival.destroy
+    end
 
     respond_to do |format|
-      format.html { redirect_to festivals_url }
+      format.html { redirect_to Country.find(@festival.country_id) }
       format.json { head :no_content }
     end
   end

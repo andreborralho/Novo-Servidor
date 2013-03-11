@@ -78,7 +78,7 @@ class GalleriesController < ApplicationController
     @gallery = Gallery.find(params[:id])
     @deleted_item = DeletedItem.new
     @deleted_item.element = @gallery.id
-    @deleted_item.table = :galleries
+    @deleted_item.table = :gallery
     @deleted_item.save
     @gallery.destroy
 

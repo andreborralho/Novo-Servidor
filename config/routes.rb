@@ -1,5 +1,7 @@
 BackOffice::Application.routes.draw do
 
+  resources :deleted_items
+
   resources :bands
   resources :countries
   resources :galleries
@@ -11,6 +13,7 @@ BackOffice::Application.routes.draw do
   resources :photos
   resources :days
   resources :stages
+  resources :videos
 
 
 get 'admin' => 'admin#index'
@@ -32,10 +35,10 @@ get 'admin' => 'admin#index'
 
   resources :festivals do
     resources :days, :stages, :shows, :notifications, :galleries
+  end
 
-    resources :shows do
-      resources :videos, :photos, :comments
-    end
+  resources :shows do
+    resources :videos, :photos, :comments
   end
 
   resources :countries do

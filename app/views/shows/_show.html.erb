@@ -1,15 +1,16 @@
 <td ><%= show.name %>
-<br/>
-<br/>
-<%= show.time.strftime('%H:%M')%>
+  <br/>
+  <br/>
+  <%= show.time.strftime('%H:%M')%>
 
 
-<div class="showLinks">
-  <%= link_to 'Comments', {:action => "index", :controller =>
-          "comments", :show => show} %>
-  <%= link_to 'Edit', edit_show_path(show) %>
-  <%= link_to 'Remove', show,
-              :confirm => 'Are you sure?',
-              :method => :delete%>
-</div>
+  <div class="showLinks">
+    <%= link_to 'Comments', {:action => "index", :controller =>
+            "comments", :show => show} %>
+    <%= link_to 'Videos', show_path(show) %>
+    <%= link_to 'Edit', edit_show_path(show) %>
+    <%= link_to 'Remove', show,
+                :confirm => 'Are you sure?',
+                :method => :delete%>
+  </div>
 </td>

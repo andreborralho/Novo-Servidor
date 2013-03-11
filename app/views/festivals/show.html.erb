@@ -1,196 +1,196 @@
 <p id="notice" xmlns="http://www.w3.org/1999/html"><%= notice %></p>
 
 <div id="links" class="roundButton">
-    <%= link_to 'Send a Notification', new_notification_path(:festival => @festival.id) %> |
-    <%= link_to 'Edit Festival', edit_festival_path(@festival) %> |
-    <%= link_to 'Back To Our Festivals List', Country.find(@festival.country_id) %>
+  <%= link_to 'Send a Notification', new_notification_path(:festival => @festival.id) %> |
+  <%= link_to 'Edit Festival', edit_festival_path(@festival) %> |
+  <%= link_to 'Back To Our Festivals List', Country.find(@festival.country_id) %>
 </div>
 
 <div class="roundDiv">
-    <div id="festivalInfo">
+  <div id="festivalInfo">
 
-        <div id="festival_info">
-            <p id="festivalTitle">
-                <b>Name:</b>
-                <%= @festival.name %>
-            </p>
-            <p>
-                <b>Coordinates:</b>
-                <%= @festival.coordinates %> <br/><%= @festival.updated_at.to_datetime %><br/><%= @festival.updated_at.to_date %><br/><%= @festival.updated_at.to_time %>
-            </p>
-            <p>
-                <b>City:</b>
-                <%= @festival.city %>
-            </p>
-        </div>
-
-        <div id="festival_imgs">
-            <div>
-              <p>
-                <b>Logo</b><br/>
-                <% if @festival.logo !='' %>
-                    <%= image_tag(@festival.logo, :class => 'logo') %>
-                <% end %>
-            </p>
-            </div>
-            <div>
-              <p>
-                <b>Template</b><br/>
-                <% if @festival.template !='' %>
-                    <%= image_tag(@festival.template, :class => 'template') %>
-                <% end %>
-              </p>
-            </div>
-            <div>
-              <p>
-                <b>Map</b> <br/>
-                <% if @festival.map !='' %>
-                    <%= image_tag(@festival.map, :class => 'map') %>
-                <% end %>
-              </p>
-            </div>
-        </div>
-
-        <div id="festival_tickets_transports">
-            <p>
-                <b>Tickets:</b>
-                <%= @festival.tickets %>
-            </p>
-            <p>
-                <b>Transports:</b>
-                <%= @festival.transports %>
-            </p>
-        </div>
+    <div id="festival_info">
+      <p id="festivalTitle">
+        <b>Name:</b>
+        <%= @festival.name %>
+      </p>
+      <p>
+        <b>Coordinates:</b>
+        <%= @festival.coordinates %>
+      </p>
+      <p>
+        <b>City:</b>
+        <%= @festival.city %>
+      </p>
     </div>
 
-    <% $festival_id = @festival.id %>
-
-    <div id="daysAndStages">
-
-        <div id="days">
-            <div id="list_days">
-                <h2>Days:</h2>
-                <%= render @festival.days %>
-            </div>
-
-            <div id="days_form">
-                <h2 id="daysTitle">Add a Day:</h2>
-
-                <%= form_for([@festival, @festival.days.build]) do |f| %>
-                    <div class="field">
-                      <b><%= f.label :date %>:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <%= f.date_select :date %><br />
-                      <b><%= f.label :opening_time %>:</b>&nbsp;&nbsp;
-                      <%= f.time_select :opening_time %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <b><%= f.label :closing_time %>:</b>&nbsp;&nbsp;
-                      <%= f.time_select :closing_time %>
-                    </div>
-
-                    <div class="actions">
-                      <%= f.submit %>
-                    </div>
-                <% end %>
-            </div>
-        </div>
-
-        <div id="stages">
-            <div id="list_stages">
-                <h2>Stages:</h2>
-                <%= render @festival.stages %>
-            </div>
-
-            <div id="stages_form">
-                <h2 id="stagesTitle">Add a Stage:</h2>
-
-                <%= form_for([@festival, @festival.stages.build]) do |f| %>
-                    <div class="field">
-                      <%= f.label :name %><br />
-                      <%= f.text_field :name %>
-                    </div>
-                    <div class="actions">
-                      <%= f.submit %>
-                    </div>
-                <% end %>
-            </div>
-        </div>
+    <div id="festival_imgs">
+      <div>
+        <p>
+          <b>Logo</b><br/>
+          <% if @festival.logo !='' %>
+              <%= image_tag(@festival.logo, :class => 'logo') %>
+          <% end %>
+        </p>
+      </div>
+      <div>
+        <p>
+          <b>Template</b><br/>
+          <% if @festival.template !='' %>
+              <%= image_tag(@festival.template, :class => 'template') %>
+          <% end %>
+        </p>
+      </div>
+      <div>
+        <p>
+          <b>Map</b> <br/>
+          <% if @festival.map !='' %>
+              <%= image_tag(@festival.map, :class => 'map') %>
+          <% end %>
+        </p>
+      </div>
     </div>
 
-    <div id="notifications">
-      <h2>Notifications:</h2>
-      <% Notification.find_all_by_festival_id(@festival.id).each do |n| %>
-          <p><%= n.text %>, <%= n.created_at.strftime("%d/%m/%Y %H:%M:%S")%>
-          <%= link_to 'Edit', edit_notification_path(n) %>
-          <%= link_to 'Remove', n,
-                        :confirm => 'Are you sure?',
-                        :method => :delete%></p>
-      <% end %>
+    <div id="festival_tickets_transports">
+      <p>
+        <b>Tickets:</b>
+        <%= simple_format(@festival.tickets) %>
+      </p>
+      <p>
+        <b>Transports:</b>
+        <%= simple_format(@festival.transports) %>
+      </p>
     </div>
+  </div>
 
-    <div id="shows_form">
-        <h2 id="showsTitle">Add a Show:</h2>
+  <% $festival_id = @festival.id %>
 
-        <%= form_for([@festival, @festival.shows.build]) do |f| %>
-          <div id="showName" class="showField">
-                 <%= f.label :name %><br />
-                 <%= f.text_field :name %>
-             </div>
+  <div id="daysAndStages">
 
-             <div class="showField">
-                 <%= f.label :day %><br />
-                 <%= f.select :day_id, $days.collect{ |d| [d.date, d.id]} %>
-             </div>
+    <div id="days">
+      <div id="list_days">
+        <h2>Days:</h2>
+        <%= render @festival.days %>
+      </div>
 
-             <div class="showField">
-                 <%= f.label :time %><br />
-                 <%= f.time_select :time %>
-             </div>
+      <div id="days_form">
+        <h2 id="daysTitle">Add a Day:</h2>
 
-             <div class="showField">
-                 <%= f.label :stage %><br />
-                 <%= f.select :stage_id, $stages.collect{ |s| [s.name, s.id] } %>
-             </div>
-            <div id="showSubmit2" class="actions">
+        <%= form_for([@festival, @festival.days.build]) do |f| %>
+            <div class="field">
+              <b><%= f.label :date %>:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <%= f.date_select :date %><br />
+              <b><%= f.label :opening_time %>:</b>&nbsp;&nbsp;
+              <%= f.time_select :opening_time %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <b><%= f.label :closing_time %>:</b>&nbsp;&nbsp;
+              <%= f.time_select :closing_time %>
+            </div>
+
+            <div class="actions">
               <%= f.submit %>
             </div>
         <% end %>
+      </div>
     </div>
 
-    <div id="lineUp">
-        <h2>Shows:</h2>
-        <div class="shows">
+    <div id="stages">
+      <div id="list_stages">
+        <h2>Stages:</h2>
+        <%= render @festival.stages %>
+      </div>
 
-          <% @festival.days.all.each do |d| %>
-              <div class="dayHeader">
-                <%= d.date.strftime('%d %B') %>
-              </div>
+      <div id="stages_form">
+        <h2 id="stagesTitle">Add a Stage:</h2>
 
-              <table class="showsTable">
-                <% @festival.stages.all.each do |s| %>
-                    <tr>
-                      <td><div class="stageName">
-                        <div class="stageNameText"><%= s.name %></div>
-                      </div></td>
+        <%= form_for([@festival, @festival.stages.build]) do |f| %>
+            <div class="field">
+              <%= f.label :name %><br />
+              <%= f.text_field :name %>
+            </div>
+            <div class="actions">
+              <%= f.submit %>
+            </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
 
-                      <% s.shows.all.each do |sh| %>
-                        <% if sh.day_id == d.id %>
+  <div id="notifications">
+    <h2>Notifications:</h2>
+    <% Notification.find_all_by_festival_id(@festival.id).each do |n| %>
+        <p><%= n.text %>, <%= n.created_at.strftime("%d/%m/%Y %H:%M:%S")%>
+          <%= link_to 'Edit', edit_notification_path(n) %>
+          <%= link_to 'Remove', n,
+                      :confirm => 'Are you sure?',
+                      :method => :delete%></p>
+    <% end %>
+  </div>
+
+  <div id="shows_form">
+    <h2 id="showsTitle">Add a Show:</h2>
+
+    <%= form_for([@festival, @festival.shows.build]) do |f| %>
+        <div id="showName" class="showField">
+          <%= f.label :name %><br />
+          <%= f.text_field :name %>
+        </div>
+
+        <div class="showField">
+          <%= f.label :day %><br />
+          <%= f.select :day_id, $days.collect{ |d| [d.date, d.id]} %>
+        </div>
+
+        <div class="showField">
+          <%= f.label :time %><br />
+          <%= f.time_select :time %>
+        </div>
+
+        <div class="showField">
+          <%= f.label :stage %><br />
+          <%= f.select :stage_id, $stages.collect{ |s| [s.name, s.id] } %>
+        </div>
+        <div id="showSubmit2" class="actions">
+          <%= f.submit %>
+        </div>
+    <% end %>
+  </div>
+
+  <div id="lineUp">
+    <h2>Shows:</h2>
+    <div class="shows">
+
+      <% @festival.days.all.each do |d| %>
+          <div class="dayHeader">
+            <%= d.date.strftime('%d %B') %>
+          </div>
+
+          <table class="showsTable">
+            <% @festival.stages.all.each do |s| %>
+                <tr>
+                  <td><div class="stageName">
+                    <div class="stageNameText"><%= s.name %></div>
+                  </div></td>
+
+                  <% s.shows.all.each do |sh| %>
+                      <% if sh.day_id == d.id %>
 
                           <% shows_filtered = [] %>
-                              <% shows_f = [] %>
+
                           <% shows_filtered << sh %>
                           <% shows_f = shows_filtered.sort_by! {|a| a[:name].downcase} %>
-                          <%#.time.strftime('%H:%M:%S')}%>
+
 
                           <% shows_f.each do |sf| %> <%=puts sf.time %>
-                            <%= render sf %>
+                              <%= render sf %>
                           <% end %>
 
-                        <% end %>
                       <% end %>
-                    </tr>
+                  <% end %>
+                </tr>
 
-                <% end %>
-              </table>
-          <% end %>
-        </div>
+            <% end %>
+          </table>
+      <% end %>
     </div>
+  </div>
 </div>

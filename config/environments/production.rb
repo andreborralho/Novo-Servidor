@@ -9,7 +9,7 @@ BackOffice::Application.configure do
   config.action_controller.perform_caching = false
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
-  config.serve_static_assets = true
+  config.serve_static_assets = false
 
   # Compress JavaScripts and CSS
   config.assets.compress = true
@@ -19,9 +19,6 @@ BackOffice::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
-
-  config.assets.initialize_on_precompile = false
-
 
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH

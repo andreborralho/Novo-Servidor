@@ -1,30 +1,67 @@
 <p id="notice"><%= notice %></p>
 
+<div id="show_links" class="roundButton">
+  <%= link_to 'Edit', edit_show_path(@show) %> |
+  <%= link_to 'Back to Festival', festival_path(@show.festival_id) %>
+</div>
 
+<div class="roundDiv">
 
-<p>
-  <b>Name:</b>
-  <%= @show.name %>
-</p>
+  <div id="show_info">
+    <div id="show_info1">
+      <p>
+        <b>Name:</b>
+        <%= @show.name %>
+      </p>
 
+      <p>
+        <b>Date:</b>
+        <%= @show.day.date %>
+      </p>
 
+      <p>
+        <b>Stage:</b>
+        <%= @show.stage.name %>
+      </p>
+    </div>
+    <div id="show_info2">
+      <p>
+        <b>Photo</b><br/>
+        <% if @show.photo !='' %>
+            <%= image_tag(@show.photo, :class => 'show_photo') %>
+        <% end %>
+      </p>
+    </div>
+    <p>
+      <b>Description:</b>
+      <%= simple_format(@show.description) %>
+    </p>
+  </div>
 
-<p>
-  <b>Date:</b>
-  <%= @show.day.date %>
-</p>
+  <div id="videos">
 
-<p>
-  <b>Stage:</b>
-  <%= @show.stage.name %>
-</p>
+    <div id="videos_form">
+      <h2 id="videoTitle">Add a Video:</h2>
 
-<p>
-  <b>Stage:</b>
-  <%= @show.description %>
-</p>
+      <%= form_for([@show, @show.videos.build]) do |s| %>
+          <div class="field">
+            <b><%= s.label :name %>:</b>
+            <%= s.text_field :name %><br />
+            <b><%= s.label :url %>:</b><br />
+            <%= s.text_field :url %>
+          </div>
 
+          <div class="actions">
+            <%= s.submit %>
+          </div>
+      <% end %>
+    </div>
 
-<%= link_to 'Edit', edit_show_path(@show) %> |
-<%= link_to 'Add New Show', new_show_path(:festival => @show.festival_id) %> |
-<%= link_to 'Back to Festival', festival_path(@show.festival_id) %>
+    <% if @show.videos.count > 0 %>
+        <div id="list_videos">
+          <h2>Videos:</h2>
+          <%= render @show.videos %>
+        </div>
+    <% end %>
+  </div>
+</div>

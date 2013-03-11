@@ -26,11 +26,16 @@ class StagesController < ApplicationController
   def destroy
     @festival = Festival.find(params[:festival_id])
     @stage = @festival.stages.find(params[:id])
-    @deleted_item = DeletedItem.new
-    @deleted_item.element = @stage.id
-    @deleted_item.table = :stages
-    @deleted_item.save
-    @stage.destroy
+
+    if @stage.shows.count == 0
+      @deleted_item = DeletedItem.new
+      @deleted_item.element = @stage.id
+      @deleted_item.table = :stage
+      @deleted_item.save
+      @stage.destroy
+    end
+
     redirect_to festival_path(@festival)
   end
+
 end

@@ -15,13 +15,11 @@ class CountriesController < ApplicationController
   # GET /countries/1.json
   def show
     @country = Country.find(params[:id])
-    #@festivals = @country.festivals
 
     respond_to do |format|
       format.html
       format.json { render json: @country }
     end
-
   end
 
   # GET /countries/new
@@ -79,7 +77,7 @@ class CountriesController < ApplicationController
     @country = Country.find(params[:id])
     @deleted_item = DeletedItem.new
     @deleted_item.element = @country.id
-    @deleted_item.table = :countries
+    @deleted_item.table = :country
     @deleted_item.save
     @country.destroy
 

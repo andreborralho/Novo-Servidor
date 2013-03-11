@@ -28,7 +28,7 @@
     <%= f.text_field :logo %>
   </div>
   <div class="urlField festivalField">
-    <%= f.label "Background Url" %><br />
+    <%= f.label :Template %><br />
     <%= f.text_field :template %>
   </div>
   <div class="urlField festivalField">
@@ -37,7 +37,7 @@
   </div>
     <div id="ticketsField" class="festivalField">
       <%= f.label :tickets %><br />
-      <%= f.text_area :tickets %>
+      <%= raw(f.text_area :tickets) %>
     </div>
     <div id="transportsField" class="festivalField">
       <%= f.label :transports %><br />

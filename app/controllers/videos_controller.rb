@@ -2,21 +2,17 @@ class VideosController < ApplicationController
   # GET /videos
   # GET /videos.json
   def index
-  #  @videos = Video.all
-    if(params[:id].nil?) then
-      @videos = Show.find(params[:show_id]).videos
-    else
-    @show = Show.find(params[:id])
-    @videos = Array.new
 
-    @show.videos.all.each do |v|
-      @videos << v
+    if params[:show_id]
+      @show = Show.find(params[:show_id])
+      @videos = @show.videos
+    else
+      @videos = Video.all
     end
-  end
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @videos }
+      format.json { render json: @videos, :callback => params[:callback] }
     end
   end
 
@@ -35,7 +31,15 @@ class VideosController < ApplicationController
   # GET /videos/new.json
   def new
     @video = Video.new
-    $show_id = params[:show]
+
+    if params[:show]
+      @show = Show.find(params[:show])
+      @video.show_id = @show.id
+    else
+      @video.show_id = $current_show_id
+      @show = Show.find($current_show_id)
+    end
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @video }
@@ -50,19 +54,11 @@ class VideosController < ApplicationController
   # POST /videos
   # POST /videos.json
   def create
-
-    @show = Show.find($show_id)
+    @show = Show.find($current_show_id)
     @video = @show.videos.create(params[:video])
 
-    respond_to do |format|
-      if @video.save
-        format.html { redirect_to @video, notice: 'Video was successfully created.' }
-        format.json { render json: @video, status: :created, location: @video }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @video.errors, status: :unprocessable_entity }
-      end
-    end
+    redirect_to show_path(@show)
+
   end
 
   # PUT /videos/1
@@ -84,16 +80,16 @@ class VideosController < ApplicationController
   # DELETE /videos/1
   # DELETE /videos/1.json
   def destroy
-    @video = Video.find(params[:id])
+    @show = Show.find(params[:show_id])
+    @video = @show.videos.find(params[:id])
+    #@video = Video.find(params[:id])
+
     @deleted_item = DeletedItem.new
     @deleted_item.element = @video.id
-    @deleted_item.table = :videos
+    @deleted_item.table = :video
     @deleted_item.save
     @video.destroy
 
-    respond_to do |format|
-      format.html { redirect_to videos_url }
-      format.json { head :no_content }
-    end
+    redirect_to show_path(@show)
   end
 end

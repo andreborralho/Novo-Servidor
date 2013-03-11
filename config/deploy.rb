@@ -10,7 +10,7 @@ set :domain, "festivall.eu"
 set :mount_path, "/"
 set :application, "festivall"
 
-set :repository, "/home/miguel/Programming/Festivall/Novo-Servidor"
-set :local_repository, "/home/miguel/Programming/Festivall/Novo-Servidor"
+set :repository, "/home/miguel/Programming/Festivall/Site"
+set :local_repository, "/home/miguel/Programming/Festivall/Site"
 set :scm, :git
 set :deploy_via, :copy

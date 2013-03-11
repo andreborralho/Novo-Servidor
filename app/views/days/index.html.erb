@@ -4,8 +4,7 @@
     <p><%= day.date %></p>
     <p><%= day.opening_time %></p>
     <p><%= day.closing_time %></p>
+    <%= link_to 'Destroy', [Festival.find(day.festival_id), day], confirm: 'Are You Sure?', method: :delete %>
 <% end %>
 
 <br />
-
-<%= link_to 'New Festival', new_festival_path %>

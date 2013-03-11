@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130216215937) do
+ActiveRecord::Schema.define(:version => 20130310153523) do
 
   create_table "bands", :force => true do |t|
     t.string   "name"
@@ -106,6 +106,7 @@ ActiveRecord::Schema.define(:version => 20130216215937) do
     t.integer  "day_id"
     t.integer  "festival_id"
     t.text     "description"
+    t.string   "photo"
   end
 
   add_index "shows", ["day_id"], :name => "index_bands_on_day_id"

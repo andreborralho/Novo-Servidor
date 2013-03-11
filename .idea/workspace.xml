@@ -2,108 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0518a636-7cee-4f47-b918-dba453b23f55" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/2e1aac8f4373852bd70f0de6ddfe4fd70a8a5fb9/festivals.css.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/2e1aac8f4373852bd70f0de6ddfe4fd70a8a5fb9/notifications.css.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/pt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/2e1aac8f4373852bd70f0de6ddfe4fd70a8a5fb9/sessions.css.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/2e1aac8f4373852bd70f0de6ddfe4fd70a8a5fb9/show.css.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130113194730_add_flag_to_countries.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130114211103_get_better_vars.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130114213539_better_vars2.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130117094220_changesomevars.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130118193832_remove_day_from_bands.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130119150616_change_table_name.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130119151334_rename_band_to_show.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130120193422_create_bands.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130209161841_hoursin_days.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130209162644_add_closing_time_to_days.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130210151332_change_var_names.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130210191902_add_festival_id_to_shows.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130215191844_add_description_to_shows.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130215193850_add_photos_to_shows.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130215212235_add_videos.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130215212833_add_show_id_to_videos.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shows/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shows/_show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shows/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shows/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shows/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/show.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/shows_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/shows_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/helpers/shows_helper_test.rb" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\app\controllers\bands_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\app\helpers\bands_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\app\models\band.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\app\views\bands\_band.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\app\views\bands\_form.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\app\views\bands\edit.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\app\views\bands\index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\app\views\bands\show.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate\20120510145040_create_festivals.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate\20120510152038_create_notifications.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate\20120510163247_create_days.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate\20120511101414_ss.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate\20120511101654_create_stages.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate\20120511125932_www.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate\20120511130124_create_bands.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate\20120511133229_band_rc.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate\20120516124559_create_videos.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate\20120516134843_create_photos.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate\20120611110500_remove_date_from_bands.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate\20120611111412_add_to_bands.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate\20120611130034_add_name_to_comments.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate\20120702102925_remove_location_from_festival.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate\20120702103212_add_city_to_festival.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate\20120716125047_create_photos.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate\20120717171320_create_galleries.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\test\unit\helpers\bands_helper_test.rb" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\app\assets\javascripts\bands.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/show.js.coffee" />
-      <change type="MOVED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\app\assets\stylesheets\bands.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/show.css.scss" />
-      <change type="MOVED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\app\views\bands\new.html.erb" afterPath="$PROJECT_DIR$/app/views/shows/new.html.erb" />
-      <change type="MOVED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\test\fixtures\bands.yml" afterPath="$PROJECT_DIR$/test/fixtures/shows.yml" />
-      <change type="MOVED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\test\functional\bands_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/shows_controller_test.rb" />
-      <change type="MOVED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\test\unit\band_test.rb" afterPath="$PROJECT_DIR$/test/unit/show_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Capfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/videos/_video.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/deploy.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/production.sqlite3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/text.txt" />
+      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\public\404.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\public\422.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\public\500.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\public\robots.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/public/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/days/_day.html.erb" afterPath="$PROJECT_DIR$/app/views/days/_day.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/countries/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/countries/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/festivals/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/festivals/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/photos/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/photos/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shows/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/shows/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/videos/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/comment.rb" afterPath="$PROJECT_DIR$/app/models/comment.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shows/_show.html.erb" afterPath="$PROJECT_DIR$/app/views/shows/_show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/comments_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/countries_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/countries_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/country.rb" afterPath="$PROJECT_DIR$/app/models/country.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/day.rb" afterPath="$PROJECT_DIR$/app/models/day.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/days_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/days_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/notifications/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/notifications/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/videos/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/festival.rb" afterPath="$PROJECT_DIR$/app/models/festival.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/festivals.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/festivals.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/2e1aac8f4373852bd70f0de6ddfe4fd70a8a5fb9/festivals.css.scssc" afterPath="$PROJECT_DIR$/.sass-cache/2e1aac8f4373852bd70f0de6ddfe4fd70a8a5fb9/festivals.css.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/festivals_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/festivals_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/galleries_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/galleries_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/index.html.erb" afterPath="$PROJECT_DIR$/app/views/comments/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/countries/index.html.erb" afterPath="$PROJECT_DIR$/app/views/countries/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/days/index.html.erb" afterPath="$PROJECT_DIR$/app/views/days/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/festivals/index.html.erb" afterPath="$PROJECT_DIR$/app/views/festivals/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/photos/index.html.erb" afterPath="$PROJECT_DIR$/app/views/photos/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/stages/index.html.erb" afterPath="$PROJECT_DIR$/app/views/stages/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/index.html.erb" afterPath="$PROJECT_DIR$/app/views/videos/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/notifications_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/notifications_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/notifications_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/notifications_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/photo.rb" afterPath="$PROJECT_DIR$/app/models/photo.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/photos_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/photos_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/show.html.erb" afterPath="$PROJECT_DIR$/app/views/comments/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/countries/show.html.erb" afterPath="$PROJECT_DIR$/app/views/countries/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/show.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/show.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/2e1aac8f4373852bd70f0de6ddfe4fd70a8a5fb9/show.css.scssc" afterPath="$PROJECT_DIR$/.sass-cache/2e1aac8f4373852bd70f0de6ddfe4fd70a8a5fb9/show.css.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/festivals/show.html.erb" afterPath="$PROJECT_DIR$/app/views/festivals/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/photos/show.html.erb" afterPath="$PROJECT_DIR$/app/views/photos/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shows/show.html.erb" afterPath="$PROJECT_DIR$/app/views/shows/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/videos/show.html.erb" afterPath="$PROJECT_DIR$/app/views/videos/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/show.rb" afterPath="$PROJECT_DIR$/app/models/show.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/shows_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/shows_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/stage.rb" afterPath="$PROJECT_DIR$/app/models/stage.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/stages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/stages_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
@@ -113,33 +54,38 @@
     </list>
     <ignored path="BackOffice.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1361029519566" ignored="false" />
+    <file path="/Dummy.txt" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1362928371394" ignored="false" />
     <file path="/20130209161841_hoursin_days.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360426984030" ignored="false" />
     <file path="/day.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360427278373" ignored="false" />
-    <file path="/index.html.erb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360963997846" ignored="false" />
-    <file path="/_day.html.erb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360518695906" ignored="false" />
-    <file path="/show.html.erb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360964027091" ignored="false" />
+    <file path="/index.html.erb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1362879542790" ignored="false" />
+    <file path="/_day.html.erb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1362869253245" ignored="false" />
+    <file path="/show.html.erb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1362932687149" ignored="false" />
     <file path="/a.dummy" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360860577910" ignored="false" />
-    <file path="/routes.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360429357079" ignored="false" />
-    <file path="/festivals.css.scss" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1361033060604" ignored="false" />
+    <file path="/routes.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1362874763560" ignored="false" />
+    <file path="/festivals.css.scss" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1362887602620" ignored="false" />
     <file path="/20130210151332_change_var_names.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360509385856" ignored="false" />
     <file path="/festival.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360524736668" ignored="false" />
-    <file path="/_form.html.erb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1361032723887" ignored="false" />
-    <file path="/festivals_controller.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1361032098400" ignored="false" />
+    <file path="/_form.html.erb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1362931959202" ignored="false" />
+    <file path="/festivals_controller.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1362883054749" ignored="false" />
     <file path="/20130210191902_add_festival_id_to_shows.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360524147347" ignored="false" />
     <file path="/country.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360524700562" ignored="false" />
     <file path="/user.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360524799602" ignored="false" />
-    <file path="/show.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360956852281" ignored="false" />
-    <file path="/shows_controller.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360663812495" ignored="false" />
+    <file path="/show.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1362929898343" ignored="false" />
+    <file path="/shows_controller.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1362877052355" ignored="false" />
     <file path="/edit.html.erb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360528918384" ignored="false" />
-    <file path="/stages_controller.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360600057857" ignored="false" />
-    <file path="/days_controller.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360600315345" ignored="false" />
-    <file path="/show.css.scss" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1361032983533" ignored="false" />
+    <file path="/stages_controller.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1362882108751" ignored="false" />
+    <file path="/days_controller.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1362882846712" ignored="false" />
+    <file path="/show.css.scss" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1362934260646" ignored="false" />
     <file path="/20130215191844_add_description_to_shows.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360956298215" ignored="false" />
     <file path="/20130215193850_add_photos_to_shows.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360957263925" ignored="false" />
     <file path="/20130215212235_add_videos.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360963518001" ignored="false" />
     <file path="/20130215212833_add_show_id_to_videos.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360963806598" ignored="false" />
     <file path="/video.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1360964057003" ignored="false" />
+    <file path="/comments_controller.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1361065200164" ignored="false" />
+    <file path="/videos_controller.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1362886832368" ignored="false" />
+    <file path="/stage.rb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1362881219884" ignored="false" />
+    <file path="/_video.html.erb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1362933428333" ignored="false" />
+    <file path="/_show.html.erb" changelist="0518a636-7cee-4f47-b918-dba453b23f55" time="1362931654451" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,46 +110,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="festivals_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/festivals_controller.rb">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/festivals/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="66" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shows/edit.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/shows/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="45" selection-start="906" selection-end="906" vertical-scroll-proportion="0.61551726">
+            <state line="33" column="24" selection-start="910" selection-end="910" vertical-scroll-proportion="-17.653847">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/festivals/show.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/shows/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="46" selection-start="4797" selection-end="4797" vertical-scroll-proportion="-15.038462">
+            <state line="61" column="43" selection-start="1370" selection-end="1370" vertical-scroll-proportion="-12.269231">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shows_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/shows_controller.rb">
+      <file leaf-file-name="_video.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/videos/_video.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="4" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.0">
+            <state line="12" column="21" selection-start="354" selection-end="354" vertical-scroll-proportion="0.55135137">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="100" column="4" selection-start="3260" selection-end="3260" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/show.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="108" column="40" selection-start="1651" selection-end="1651" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -227,22 +173,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/comment.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/shows_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130215193850_add_photos_to_shows.rb" />
-        <option value="$PROJECT_DIR$/app/views/shows/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shows/index.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130215212235_add_videos.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130215212833_add_show_id_to_videos.rb" />
         <option value="$PROJECT_DIR$/app/views/videos/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/videos/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/videos/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/video.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/videos_controller.rb" />
+        <option value="dbtable:/72f7da96/1a7510bc-4dd5-4bb3-8461-c0948d6c4bec/..shows" />
+        <option value="dbtable:/72f7da96/1a7510bc-4dd5-4bb3-8461-c0948d6c4bec/..stages" />
+        <option value="dbtable:/72f7da96/1a7510bc-4dd5-4bb3-8461-c0948d6c4bec/..videos" />
+        <option value="dbtable:/72f7da96/1a7510bc-4dd5-4bb3-8461-c0948d6c4bec/..galleries" />
         <option value="$PROJECT_DIR$/app/controllers/festivals_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/shows/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/show.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/videos/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/videos_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/festivals.css.scss" />
+        <option value="$PROJECT_DIR$/app/models/show.rb" />
+        <option value="$PROJECT_DIR$/app/views/shows/_show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shows/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/festivals/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shows/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/videos/_video.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/show.css.scss" />
       </list>
     </option>
   </component>
@@ -254,10 +200,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1358" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1066" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -285,16 +231,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -323,7 +259,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -342,6 +278,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="videos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BackOffice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BackOffice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BackOffice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BackOffice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shows" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -395,30 +375,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BackOffice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BackOffice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -443,14 +411,14 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
-    <property name="Database.TableEditor.Splitter" value="0.8999999" />
+    <property name="Database.TableEditor.Splitter" value="0.89999986" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PublishConfig" serverName="FestivAll.eu" serverId="87446527-ba1f-4e56-bcfd-601f323ed0dc">
     <servers>
@@ -465,6 +433,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\app\views\videos" />
       <recent name="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\app\assets\images" />
       <recent name="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db\migrate" />
       <recent name="C:\Users\Andre\Documents\Universidade\Git Projectos\BackOffice\db" />
@@ -804,26 +773,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1696" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15483476" sideWeight="0.6795699" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14924243" sideWeight="0.6940789" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21542227" sideWeight="0.6550562" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15605876" sideWeight="0.6795699" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967105" sideWeight="0.4969697" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16742425" sideWeight="0.6940789" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39810428" sideWeight="0.4969697" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16818182" sideWeight="0.19407895" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28782895" sideWeight="0.501836" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3204301" sideWeight="0.49388006" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30592105" sideWeight="0.5007576" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30592105" sideWeight="0.49318182" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.253125" sideWeight="0.9136364" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6513158" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.253125" sideWeight="0.9136364" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5049342" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50394946" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -885,114 +854,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/videos/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/videos/edit.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130215191844_add_description_to_shows.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/videos/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="15" selection-start="134" selection-end="134" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/videos/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130215193850_add_photos_to_shows.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/videos/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="28" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="26" selection-start="1761" selection-end="1761" vertical-scroll-proportion="0.8715278">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="32" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shows/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130215212235_add_videos.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/festivals_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130310153523_add_photo_to_shows.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="66" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0">
+        <state line="5" column="60" selection-start="110" selection-end="110" vertical-scroll-proportion="0.14604811">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shows/edit.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/show.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/festivals/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="46" selection-start="4797" selection-end="4797" vertical-scroll-proportion="-15.038462">
+        <state line="11" column="50" selection-start="294" selection-end="294" vertical-scroll-proportion="0.48825064">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/shows_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="4" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.0">
+        <state line="12" column="19" selection-start="276" selection-end="276" vertical-scroll-proportion="-4.7651515">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/show.css.scss">
+    <entry file="file://$PROJECT_DIR$/../../../Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/helpers/rendering_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="22" selection-start="393" selection-end="393" vertical-scroll-proportion="0.8710247">
+        <state line="17" column="10" selection-start="929" selection-end="929" vertical-scroll-proportion="0.33159268">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/festivals.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/shows/_show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="38" selection-start="2118" selection-end="2118" vertical-scroll-proportion="2.2526503">
+        <state line="13" column="26" selection-start="404" selection-end="404" vertical-scroll-proportion="0.5972973">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/festivals/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="20" selection-start="1046" selection-end="1056" vertical-scroll-proportion="0.64324325">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shows/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="45" selection-start="906" selection-end="906" vertical-scroll-proportion="0.61551726">
+        <state line="38" column="19" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.6783784">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/festivals/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="24" selection-start="910" selection-end="910" vertical-scroll-proportion="-17.653847">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="4" selection-start="3260" selection-end="3260" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/show.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="40" selection-start="1651" selection-end="1651" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="41" selection-start="2795" selection-end="2803" vertical-scroll-proportion="1.2575758">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shows/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="43" selection-start="1370" selection-end="1370" vertical-scroll-proportion="-12.269231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/videos/_video.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="21" selection-start="354" selection-end="354" vertical-scroll-proportion="0.55135137">
           <folding />
         </state>
       </provider>

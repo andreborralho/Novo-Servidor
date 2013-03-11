@@ -3,14 +3,14 @@
     <%= day.date %> &nbsp;&nbsp;&nbsp;&nbsp;
 
   <% if day.opening_time %>
-        <%= day.opening_time.strftime('%H:%M:%S') %>
+        <%= day.opening_time.strftime('%H:%M') %>
   <% end %>
   <% if day.closing_time %>
         to
-        <%= day.closing_time.strftime('%H:%M:%S') %>
+        <%= day.closing_time.strftime('%H:%M') %>
   <% end %>
 
     <%= link_to 'Remove', [Festival.find(day.festival_id), day],
     :confirm => 'Are you sure?',
-    :method => :delete%>
+    :method => :delete %>
 </p>

@@ -75,7 +75,7 @@ class PhotosController < ApplicationController
     @photo = Photo.find(params[:id])
     @deleted_item = DeletedItem.new
     @deleted_item.element = @photo.id
-    @deleted_item.table = :photos
+    @deleted_item.table = :photo
     @deleted_item.save
     @photo.destroy
 

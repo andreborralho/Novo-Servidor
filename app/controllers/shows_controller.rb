@@ -8,11 +8,7 @@ class ShowsController < ApplicationController
       @shows = Show.all
     else
       @festival = Festival.find(params[:festival_id])
-      #@shows = Array.new
       @shows = @festival.shows
-      #@festival.shows.all.each do |s|
-       #   @shows << s
-      #end
     end
 
     respond_to do |format|
@@ -25,6 +21,7 @@ class ShowsController < ApplicationController
   # GET /shows/1.json
   def show
     @show = Show.find(params[:id])
+    $current_show_id = @show.id
 
     respond_to do |format|
       format.html # show.html.erb
@@ -36,11 +33,10 @@ class ShowsController < ApplicationController
   # GET /shows/new.json
   def new
     @show = Show.new
+
     if params[:festival_id].nil?
       @show.festival_id = $current_festival_id
       @festival = Festival.find($current_festival_id)
-      $stages = @festival.stages
-      $days = @festival.days
     else
       @festival = Festival.find(params[:festival_id])
       @show.festival_id = @festival.id
@@ -136,7 +132,7 @@ class ShowsController < ApplicationController
     @show = Show.find(params[:id])
     @deleted_item = DeletedItem.new
     @deleted_item.element = @show.id
-    @deleted_item.table = :shows
+    @deleted_item.table = :show
     @deleted_item.save
     @show.destroy
 
