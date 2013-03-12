@@ -30,7 +30,7 @@ class StagesController < ApplicationController
     if @stage.shows.count == 0
       @deleted_item = DeletedItem.new
       @deleted_item.element = @stage.id
-      @deleted_item.table = :stage
+      @deleted_item.table = :stages
       @deleted_item.save
       @stage.destroy
     end

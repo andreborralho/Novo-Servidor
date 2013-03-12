@@ -134,7 +134,7 @@ class FestivalsController < ApplicationController
     if @festival.shows.count == 0 && @festival.days.count == 0 && @festival.stages.count == 0
       @deleted_item = DeletedItem.new
       @deleted_item.element = @festival.id
-      @deleted_item.table = :festival
+      @deleted_item.table = :festivals
       @deleted_item.save
       @festival.destroy
     end

@@ -77,7 +77,7 @@ class NotificationsController < ApplicationController
     @notification = Notification.find(params[:id])
     @deleted_item = DeletedItem.new
     @deleted_item.element = @notification.id
-    @deleted_item.table = :notification
+    @deleted_item.table = :notifications
     @deleted_item.save
     @notification.destroy
 

@@ -86,7 +86,7 @@ class VideosController < ApplicationController
 
     @deleted_item = DeletedItem.new
     @deleted_item.element = @video.id
-    @deleted_item.table = :video
+    @deleted_item.table = :videos
     @deleted_item.save
     @video.destroy
 
