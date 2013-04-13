@@ -35,6 +35,10 @@
     <%= f.label "Map" %><br />
     <%= f.text_field :map %>
   </div>
+    <div id="tickets_priceField" class="festivalField">
+      <%= f.label :tickets_price %><br />
+      <%= raw(f.text_field :tickets_price) %>
+    </div>
     <div id="ticketsField" class="festivalField">
       <%= f.label :tickets %><br />
       <%= raw(f.text_area :tickets) %>

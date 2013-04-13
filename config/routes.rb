@@ -1,5 +1,7 @@
 BackOffice::Application.routes.draw do
 
+  resources :feedbacks
+
   resources :deleted_items
 
   resources :bands

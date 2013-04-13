@@ -1,5 +1,5 @@
 class Festival < ActiveRecord::Base
-  attr_accessible :template, :city, :coordinates, :logo, :map, :name, :tickets, :transports, :country_id, :days, :stages, :shows
+  attr_accessible :template, :city, :coordinates, :logo, :map, :name, :tickets, :transports, :tickets_price, :country_id, :days, :stages, :shows
 
   belongs_to :country
   has_many :days

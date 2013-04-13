@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130310153523) do
+ActiveRecord::Schema.define(:version => 20130413200056) do
 
   create_table "bands", :force => true do |t|
     t.string   "name"
@@ -54,19 +54,27 @@ ActiveRecord::Schema.define(:version => 20130310153523) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "feedbacks", :force => true do |t|
+    t.string   "name"
+    t.text     "text"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "festivals", :force => true do |t|
     t.string   "name"
     t.string   "coordinates"
     t.string   "logo"
     t.string   "template"
     t.string   "map"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
     t.text     "tickets"
     t.text     "transports"
     t.integer  "user_id"
     t.string   "city"
     t.integer  "country_id"
+    t.string   "tickets_price"
   end
 
   add_index "festivals", ["country_id"], :name => "index_festivals_on_country_id"
