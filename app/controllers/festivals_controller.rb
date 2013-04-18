@@ -20,6 +20,7 @@ class FestivalsController < ApplicationController
       #@photos = Photo.all(:conditions => ["updated_at >= ?", params[:start_date]])
       @videos = Video.all(:conditions => ["updated_at >= ?", params[:start_date]])
       @deleted_items = DeletedItem.all(:conditions => ["updated_at >= ?", params[:start_date]])
+      @about_us = AboutU.all(:conditions => ["updated_at >= ?", params[:start_date]])
     else
       @festivals = Festival.all
       @stages = Stage.all
@@ -32,6 +33,7 @@ class FestivalsController < ApplicationController
       #@photos = Photo.all
       @videos = Video.all
       @deleted_items = DeletedItem.all
+      @about_us = AboutU.all
     end
 
     #elsif User.find_by_id(session[:user_id]).name == 'admin'
@@ -53,7 +55,9 @@ class FestivalsController < ApplicationController
           :galleries => @galleries,
           :shows => @shows,
           :videos => @videos,
-          :deleted_items => @deleted_items}, :callback => params[:callback] }
+          :deleted_items => @deleted_items,
+          :about_us => @about_us},
+                           :callback => params[:callback] }
     end
   end
 

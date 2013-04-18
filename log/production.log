@@ -65257,3 +65257,523 @@ ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
 
 
+Migrating to CreateCountries (20120927004740)
+Migrating to AddFlagToCountries (20130113194730)
+Migrating to GetBetterVars (20130114211103)
+Migrating to BetterVars2 (20130114213539)
+Migrating to Changesomevars (20130117094220)
+Migrating to RemoveDayFromBands (20130118193832)
+Migrating to ChangeTableName (20130119150616)
+Migrating to RenameBandToShow (20130119151334)
+Migrating to CreateBands (20130120193422)
+Migrating to HoursinDays (20130209161841)
+Migrating to AddClosingTimeToDays (20130209162644)
+Migrating to ChangeVarNames (20130210151332)
+Migrating to AddFestivalIdToShows (20130210191902)
+Migrating to AddDescriptionToShows (20130215191844)
+Migrating to AddPhotosToShows (20130215193850)
+Migrating to AddVideos (20130215212235)
+Migrating to AddShowIdToVideos (20130215212833)
+Migrating to CreateDeletedItems (20130216215937)
+Migrating to AddPhotoToShows (20130310153523)
+Migrating to CreateFeedbackTable (20130413191216)
+Migrating to CreateFeedbacks (20130413193829)
+Migrating to DeleteFeedbackTable (20130413200056)
+Migrating to AddEmailToFeedbacks (20130414153429)
+Migrating to CreateAboutUsTable (20130418214909)
+Migrating to CreateAboutUsTable (20130418214909)
+Migrating to CreateCountries (20120927004740)
+Migrating to AddFlagToCountries (20130113194730)
+Migrating to GetBetterVars (20130114211103)
+Migrating to BetterVars2 (20130114213539)
+Migrating to Changesomevars (20130117094220)
+Migrating to RemoveDayFromBands (20130118193832)
+Migrating to ChangeTableName (20130119150616)
+Migrating to RenameBandToShow (20130119151334)
+Migrating to CreateBands (20130120193422)
+Migrating to HoursinDays (20130209161841)
+Migrating to AddClosingTimeToDays (20130209162644)
+Migrating to ChangeVarNames (20130210151332)
+Migrating to AddFestivalIdToShows (20130210191902)
+Migrating to AddDescriptionToShows (20130215191844)
+Migrating to AddPhotosToShows (20130215193850)
+Migrating to AddVideos (20130215212235)
+Migrating to AddShowIdToVideos (20130215212833)
+Migrating to CreateDeletedItems (20130216215937)
+Migrating to AddPhotoToShows (20130310153523)
+Migrating to CreateFeedbackTable (20130413191216)
+Migrating to CreateFeedbacks (20130413193829)
+Migrating to DeleteFeedbackTable (20130413200056)
+Migrating to AddEmailToFeedbacks (20130414153429)
+Migrating to CreateAboutUsTable (20130418214909)
+Migrating to CreateAboutUs (20130418215919)
+Migrating to CreateCountries (20120927004740)
+Migrating to AddFlagToCountries (20130113194730)
+Migrating to GetBetterVars (20130114211103)
+Migrating to BetterVars2 (20130114213539)
+Migrating to Changesomevars (20130117094220)
+Migrating to RemoveDayFromBands (20130118193832)
+Migrating to ChangeTableName (20130119150616)
+Migrating to RenameBandToShow (20130119151334)
+Migrating to CreateBands (20130120193422)
+Migrating to HoursinDays (20130209161841)
+Migrating to AddClosingTimeToDays (20130209162644)
+Migrating to ChangeVarNames (20130210151332)
+Migrating to AddFestivalIdToShows (20130210191902)
+Migrating to AddDescriptionToShows (20130215191844)
+Migrating to AddPhotosToShows (20130215193850)
+Migrating to AddVideos (20130215212235)
+Migrating to AddShowIdToVideos (20130215212833)
+Migrating to CreateDeletedItems (20130216215937)
+Migrating to AddPhotoToShows (20130310153523)
+Migrating to CreateFeedbackTable (20130413191216)
+Migrating to CreateFeedbacks (20130413193829)
+Migrating to DeleteFeedbackTable (20130413200056)
+Migrating to AddEmailToFeedbacks (20130414153429)
+Migrating to CreateAboutUsTable (20130418214909)
+Migrating to CreateAboutUs (20130418215919)
+Migrating to CreateCountries (20120927004740)
+Migrating to AddFlagToCountries (20130113194730)
+Migrating to GetBetterVars (20130114211103)
+Migrating to BetterVars2 (20130114213539)
+Migrating to Changesomevars (20130117094220)
+Migrating to RemoveDayFromBands (20130118193832)
+Migrating to ChangeTableName (20130119150616)
+Migrating to RenameBandToShow (20130119151334)
+Migrating to CreateBands (20130120193422)
+Migrating to HoursinDays (20130209161841)
+Migrating to AddClosingTimeToDays (20130209162644)
+Migrating to ChangeVarNames (20130210151332)
+Migrating to AddFestivalIdToShows (20130210191902)
+Migrating to AddDescriptionToShows (20130215191844)
+Migrating to AddPhotosToShows (20130215193850)
+Migrating to AddVideos (20130215212235)
+Migrating to AddShowIdToVideos (20130215212833)
+Migrating to CreateDeletedItems (20130216215937)
+Migrating to AddPhotoToShows (20130310153523)
+Migrating to CreateFeedbackTable (20130413191216)
+Migrating to CreateFeedbacks (20130413193829)
+Migrating to DeleteFeedbackTable (20130413200056)
+Migrating to AddEmailToFeedbacks (20130414153429)
+Migrating to CreateAboutUsTable (20130418214909)
+Migrating to CreateAboutUs (20130418215919)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-18 23:14:27 +0100
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (26.0ms)
+Compiled about_us.js  (635ms)  (pid 200)
+Compiled application.js  (920ms)  (pid 200)
+Completed 200 OK in 34528ms (Views: 34506.0ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-18 23:15:23 +0100
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/sessions-935c6ecaaa74e539ae0897f01f5ecb77.css" for 127.0.0.1 at 2013-04-18 23:15:23 +0100
+Served asset /sessions-935c6ecaaa74e539ae0897f01f5ecb77.css - 200 OK (0ms)
+
+
+Started GET "/assets/festivals-a1d3e5c7c78929221f7a2e92e1a1cfe2.css" for 127.0.0.1 at 2013-04-18 23:15:23 +0100
+Served asset /festivals-a1d3e5c7c78929221f7a2e92e1a1cfe2.css - 200 OK (0ms)
+
+
+Started GET "/assets/notifications-5c8fd73c080d0ba7eee2504649ff71cb.css" for 127.0.0.1 at 2013-04-18 23:15:23 +0100
+Served asset /notifications-5c8fd73c080d0ba7eee2504649ff71cb.css - 200 OK (0ms)
+
+
+Started GET "/assets/show-1235b84d2d6ed19bc4c2b6da4aa63a5c.css" for 127.0.0.1 at 2013-04-18 23:15:23 +0100
+Served asset /show-1235b84d2d6ed19bc4c2b6da4aa63a5c.css - 200 OK (1ms)
+
+
+Started GET "/assets/application-05ec28d2919dbdd4bfa8e3ea4d8c1cdc.js" for 127.0.0.1 at 2013-04-18 23:15:23 +0100
+Served asset /application-05ec28d2919dbdd4bfa8e3ea4d8c1cdc.js - 200 OK (0ms)
+
+
+Started GET "/assets/Logo%20Festivall-7649d707169ea081aa13235ca6404011.png" for 127.0.0.1 at 2013-04-18 23:15:23 +0100
+Served asset /Logo%20Festivall-7649d707169ea081aa13235ca6404011.png - 200 OK (0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2013-04-18 23:15:23 +0100
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2013-04-18 23:15:23 +0100
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started POST "/login" for 127.0.0.1 at 2013-04-18 23:15:26 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s3ZyaDHlqIx2KR2EfgAKROrU98OU9s/7OFKK+BJRF8Q=", "name"=>"admin", "password"=>"[FILTERED]", "commit"=>"Login"}
+Redirected to http://localhost:3000/countries
+Completed 302 Found in 28ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2013-04-18 23:15:26 +0100
+Processing by CountriesController#index as HTML
+  Rendered countries/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 79ms (Views: 68.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pt-258b1d5dba9f4dd1746a873e9dd41eb1.png" for 127.0.0.1 at 2013-04-18 23:15:26 +0100
+Served asset /pt-258b1d5dba9f4dd1746a873e9dd41eb1.png - 200 OK (0ms)
+
+
+Started GET "/assets/" for 127.0.0.1 at 2013-04-18 23:15:26 +0100
+Served asset  - 404 Not Found (0ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2013-04-18 23:15:26 +0100
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/countries/1" for 127.0.0.1 at 2013-04-18 23:15:27 +0100
+Processing by CountriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered countries/show.html.erb within layouts/application (277.0ms)
+Completed 200 OK in 353ms (Views: 349.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/" for 127.0.0.1 at 2013-04-18 23:15:28 +0100
+Served asset  - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2013-04-18 23:15:28 +0100
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/about_us" for 127.0.0.1 at 2013-04-18 23:15:34 +0100
+Processing by AboutUsController#index as HTML
+  Rendered about_us/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 47ms (Views: 41.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2013-04-18 23:15:34 +0100
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/about_us/new" for 127.0.0.1 at 2013-04-18 23:15:41 +0100
+Processing by AboutUsController#new as HTML
+  Rendered about_us/_form.html.erb (52.0ms)
+  Rendered about_us/new.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 124ms (Views: 115.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2013-04-18 23:15:41 +0100
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2013-04-18 23:15:45 +0100
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/about_us/new" for 127.0.0.1 at 2013-04-18 23:15:46 +0100
+Processing by AboutUsController#new as HTML
+  Rendered about_us/_form.html.erb (3.0ms)
+  Rendered about_us/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2013-04-18 23:15:46 +0100
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started POST "/about_us" for 127.0.0.1 at 2013-04-18 23:16:41 +0100
+Processing by AboutUsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s3ZyaDHlqIx2KR2EfgAKROrU98OU9s/7OFKK+BJRF8Q=", "about_u"=>{"title"=>"Quem somos nós?", "text"=>"A app FestivAll foi desenvolvida por 3 portugueses"}, "commit"=>"Create About u"}
+Redirected to http://localhost:3000/about_us/1
+Completed 302 Found in 287ms (ActiveRecord: 279.0ms)
+
+
+Started GET "/about_us/1" for 127.0.0.1 at 2013-04-18 23:16:42 +0100
+Processing by AboutUsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered about_us/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2013-04-18 23:16:42 +0100
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/about_us.json" for 127.0.0.1 at 2013-04-18 23:16:49 +0100
+Processing by AboutUsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2013-04-18 23:16:49 +0100
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/festivals.json" for 127.0.0.1 at 2013-04-18 23:19:37 +0100
+Processing by FestivalsController#index as JSON
+Completed 200 OK in 392ms (Views: 158.0ms | ActiveRecord: 23.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2013-04-18 23:19:37 +0100
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
