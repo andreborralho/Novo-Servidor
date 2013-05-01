@@ -3,5 +3,6 @@
 <% @stages.each do |stage| %>
 
     <p><%= stage.name %></p>
+    <%= link_to 'Edit', edit_stage_path(stage) %>
     <%= link_to 'Destroy', [Festival.find(stage.festival_id), stage], confirm: 'Are You Sure?', method: :delete %>
 <% end %>

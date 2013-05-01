@@ -13,4 +13,6 @@
     <%= link_to 'Remove', [Festival.find(day.festival_id), day],
     :confirm => 'Are you sure?',
     :method => :delete %>
+
+    <%= link_to 'Edit', edit_day_path(day) %>
 </p>

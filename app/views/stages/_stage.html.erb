@@ -1,7 +1,9 @@
 
 <p>
     <%= stage.name %>
+
     <%= link_to 'Remove', [Festival.find(stage.festival_id), stage],
               :confirm => 'Are you sure?',
               :method => :delete%>
+    <%= link_to 'Edit', edit_stage_path(stage) %>
 </p>

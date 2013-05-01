@@ -13,11 +13,33 @@ class DaysController < ApplicationController
     end
   end
 
+  # GET /days/1/edit
+  def edit
+    @day = Day.find(params[:id])
+    @festival = Festival.find(@day.festival.id)
+  end
+
   def create
     @festival = Festival.find(params[:festival_id])
     @day = @festival.days.create(params[:day])
 
     redirect_to festival_path(@festival)
+  end
+
+  # PUT /days/1
+  # PUT /days/1.json
+  def update
+    @day = Day.find(params[:id])
+
+    respond_to do |format|
+      if @day.update_attributes(params[:day])
+        format.html { redirect_to festival_path(@day.festival.id), notice: 'Show was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @day.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def destroy

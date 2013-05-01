@@ -15,12 +15,34 @@ class StagesController < ApplicationController
     end
   end
 
-  def create
-  expire_page :action => :index
-  @festival = Festival.find(params[:festival_id])
-  @stage = @festival.stages.create(params[:stage])
+  # GET /stages/1/edit
+  def edit
+    @stage = Stage.find(params[:id])
+    @festival = Festival.find(@stage.festival.id)
+  end
 
-  redirect_to festival_path(@festival)
+  def create
+    expire_page :action => :index
+    @festival = Festival.find(params[:festival_id])
+    @stage = @festival.stages.create(params[:stage])
+
+    redirect_to festival_path(@festival)
+  end
+
+  # PUT /stages/1
+  # PUT /stages/1.json
+  def update
+    @stage = Stage.find(params[:id])
+
+    respond_to do |format|
+      if @stage.update_attributes(params[:stage])
+        format.html { redirect_to festival_path(@stage.festival.id), notice: 'Show was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @stage.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def destroy
