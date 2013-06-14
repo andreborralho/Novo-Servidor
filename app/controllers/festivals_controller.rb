@@ -9,7 +9,7 @@ class FestivalsController < ApplicationController
       @country = Country.find(params[:country_id])
       @festivals = @country.festival
     elsif params[:start_date]
-      @festivals = Festival.all(:conditions => ["updated_at >= ?", params[:start_date].to_date])
+      @festivals = Festival.all(:conditions => ["updated_at >= ?", params[:start_date]])
       @stages = Stage.all(:conditions => ["updated_at >= ?", params[:start_date]])
       @days = Day.all(:conditions => ["updated_at >= ?", params[:start_date]])
       @shows = Show.all(:conditions => ["updated_at >= ?", params[:start_date]])

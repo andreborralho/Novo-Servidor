@@ -73,6 +73,11 @@ class AboutUsController < ApplicationController
   # DELETE /about_us/1.json
   def destroy
     @about_u = AboutU.find(params[:id])
+
+    @deleted_item = DeletedItem.new
+    @deleted_item.element = @about_u.id
+    @deleted_item.table = :about_us
+    @deleted_item.save
     @about_u.destroy
 
     respond_to do |format|
