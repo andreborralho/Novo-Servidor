@@ -42,7 +42,7 @@ class GalleriesController < ApplicationController
    #@gallery = Gallery.new({photo: 'ola'})
 
     @festival = Festival.find(params[:festivalId])
-    @gallery = Gallery.new({photo: strict_encode64(params[:image])})
+    #@gallery = Gallery.new({photo: strict_encode64(params[:image])})
     @gallery = @festival.galleries.create({photo: strict_encode64(params[:image])})
 
     respond_to do |format|
