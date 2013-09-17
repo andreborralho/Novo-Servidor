@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @ad.name %>
+</p>
+
+<p>
+  <b>Percentage:</b>
+  <%= @ad.percentage %>
+</p>
+
+<p>
+  <b>Due date:</b>
+  <%= @ad.due_date %>
+</p>
+
+<p>
+  <b>Banner:</b>
+  <%= image_tag(@ad.banner) %>
+</p>
+
+<p>
+  <b>Splash:</b>
+  <%= image_tag(@ad.splash) %>
+</p>
+
+
+<%= link_to 'Edit', edit_ad_path(@ad) %> |
+<%= link_to 'Back', ads_path %>

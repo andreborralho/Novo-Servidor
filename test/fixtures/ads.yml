@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  percentage: 1.5
+  due_date: 2013-06-19 21:23:47
+  banner: MyText
+  splash: MyText
+
+two:
+  name: MyString
+  percentage: 1.5
+  due_date: 2013-06-19 21:23:47
+  banner: MyText
+  splash: MyText

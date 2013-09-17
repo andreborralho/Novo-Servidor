@@ -21,6 +21,7 @@ class FestivalsController < ApplicationController
       @videos = Video.all(:conditions => ["updated_at >= ?", params[:start_date]])
       @deleted_items = DeletedItem.all(:conditions => ["updated_at >= ?", params[:start_date]])
       @about_us = AboutU.all(:conditions => ["updated_at >= ?", params[:start_date]])
+      @ads = Ad.all(:conditions => ["updated_at >= ?", params[:start_date]])
     else
       @festivals = Festival.all
       @stages = Stage.all
@@ -34,6 +35,7 @@ class FestivalsController < ApplicationController
       @videos = Video.all
       @deleted_items = DeletedItem.all
       @about_us = AboutU.all
+      @ads = Ad.all
     end
 
     #elsif User.find_by_id(session[:user_id]).name == 'admin'
@@ -45,6 +47,7 @@ class FestivalsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json =>{
+          :migration_version => ActiveRecord::Migrator.current_version,
           :festivals => @festivals,
           :stages => @stages,
           :days => @days,
@@ -56,7 +59,9 @@ class FestivalsController < ApplicationController
           :shows => @shows,
           :videos => @videos,
           :deleted_items => @deleted_items,
-          :about_us => @about_us},
+          :about_us => @about_us,
+          :ads => @ads
+          },
                            :callback => params[:callback] }
     end
   end

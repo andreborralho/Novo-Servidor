@@ -1,0 +1,31 @@
+<h1>Listing ads</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Percentage</th>
+    <th>Due date</th>
+    <th>Banner</th>
+    <th>Splash</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ads.each do |ad| %>
+  <tr>
+    <td><%= ad.name %></td>
+    <td><%= ad.percentage %></td>
+    <td><%= ad.due_date %></td>
+    <td><%= image_tag(ad.banner, :class => 'ad_banner') %></td>
+    <td><%= image_tag(ad.splash, :class => 'ad_splash') %></td>
+    <td><%= link_to 'Show', ad %></td>
+    <td><%= link_to 'Edit', edit_ad_path(ad) %></td>
+    <td><%= link_to 'Destroy', ad, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ad', new_ad_path %>

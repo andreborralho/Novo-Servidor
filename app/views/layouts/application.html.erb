@@ -11,8 +11,8 @@
 </head>
 <body>
     <div id="wrapper">
-    <% if session[:user_id] %>
 
+    <% if session[:user_id]%>
         <div id="logoutContainer">
             <h3>User: <%= User.find_by_id(session[:user_id]).name %></h3>
             <%= button_to 'Logout', logout_path, :method => :delete %>
