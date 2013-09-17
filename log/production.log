@@ -77047,3 +77047,210 @@ ActionController::RoutingError (No route matches [GET] "/assets"):
   C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
 
 
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-17 13:02:09 +0100
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 459ms (Views: 242.0ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/assets/sessions-935c6ecaaa74e539ae0897f01f5ecb77.css" for 127.0.0.1 at 2013-09-17 13:02:10 +0100
+Served asset /sessions-935c6ecaaa74e539ae0897f01f5ecb77.css - 200 OK (0ms)
+
+
+Started GET "/assets/notifications-5c8fd73c080d0ba7eee2504649ff71cb.css" for 127.0.0.1 at 2013-09-17 13:02:10 +0100
+Served asset /notifications-5c8fd73c080d0ba7eee2504649ff71cb.css - 200 OK (0ms)
+
+
+Started GET "/assets/festivals-43bc00be644ac4fc1232a2990c160637.css" for 127.0.0.1 at 2013-09-17 13:02:10 +0100
+Served asset /festivals-43bc00be644ac4fc1232a2990c160637.css - 200 OK (0ms)
+
+
+Started GET "/assets/show-1235b84d2d6ed19bc4c2b6da4aa63a5c.css" for 127.0.0.1 at 2013-09-17 13:02:10 +0100
+Served asset /show-1235b84d2d6ed19bc4c2b6da4aa63a5c.css - 200 OK (0ms)
+
+
+Started GET "/assets/application-ddff79805248c96de7caf852956fa678.js" for 127.0.0.1 at 2013-09-17 13:02:10 +0100
+Served asset /application-ddff79805248c96de7caf852956fa678.js - 200 OK (0ms)
+
+
+Started GET "/assets/Logo%20Festivall-7649d707169ea081aa13235ca6404011.png" for 127.0.0.1 at 2013-09-17 13:02:10 +0100
+Served asset /Logo%20Festivall-7649d707169ea081aa13235ca6404011.png - 200 OK (0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2013-09-17 13:02:10 +0100
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  railties (3.2.3) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.1) lib/rack/deflater.rb:13:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/festivals.json" for 127.0.0.1 at 2013-09-17 13:04:06 +0100
+Processing by FestivalsController#index as JSON
+Completed 500 Internal Server Error in 191ms
+
+ActiveRecord::StatementInvalid (Could not find table 'ads'):
+  app/controllers/festivals_controller.rb:38:in `index'
+
+
+
+
+Started GET "/festivals.json" for 127.0.0.1 at 2013-09-17 13:06:06 +0100
+Processing by FestivalsController#index as JSON
+Completed 500 Internal Server Error in 311ms
+
+ActiveRecord::StatementInvalid (Could not find table 'ads'):
+  app/controllers/festivals_controller.rb:38:in `index'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-17 13:06:44 +0100
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 360ms (Views: 206.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-09-17 13:06:53 +0100
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2013-09-17 13:06:54 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s3ZyaDHlqIx2KR2EfgAKROrU98OU9s/7OFKK+BJRF8Q=", "name"=>"admin", "password"=>"[FILTERED]", "commit"=>"Login"}
+Redirected to http://localhost:3000/countries
+Completed 302 Found in 35ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2013-09-17 13:06:54 +0100
+Processing by CountriesController#index as HTML
+  Rendered countries/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 37ms (Views: 24.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pt-258b1d5dba9f4dd1746a873e9dd41eb1.png" for 127.0.0.1 at 2013-09-17 13:06:54 +0100
+Served asset /pt-258b1d5dba9f4dd1746a873e9dd41eb1.png - 200 OK (0ms)
+
+
+Started GET "/assets/" for 127.0.0.1 at 2013-09-17 13:06:54 +0100
+Served asset  - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  railties (3.2.3) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.1) lib/rack/deflater.rb:13:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/countries/1" for 127.0.0.1 at 2013-09-17 13:06:56 +0100
+Processing by CountriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered countries/show.html.erb within layouts/application (246.0ms)
+Completed 200 OK in 256ms (Views: 252.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/" for 127.0.0.1 at 2013-09-17 13:06:57 +0100
+Served asset  - 404 Not Found (0ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  railties (3.2.3) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.1) lib/rack/deflater.rb:13:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Users/Andre/Documents/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/festivals.json" for 127.0.0.1 at 2013-09-17 13:07:04 +0100
+Processing by FestivalsController#index as JSON
+Completed 500 Internal Server Error in 149ms
+
+ActiveRecord::StatementInvalid (Could not find table 'ads'):
+  app/controllers/festivals_controller.rb:38:in `index'
+
+
+Migrating to CreateCountries (20120927004740)
+Migrating to AddFlagToCountries (20130113194730)
+Migrating to GetBetterVars (20130114211103)
+Migrating to BetterVars2 (20130114213539)
+Migrating to Changesomevars (20130117094220)
+Migrating to RemoveDayFromBands (20130118193832)
+Migrating to ChangeTableName (20130119150616)
+Migrating to RenameBandToShow (20130119151334)
+Migrating to CreateBands (20130120193422)
+Migrating to HoursinDays (20130209161841)
+Migrating to AddClosingTimeToDays (20130209162644)
+Migrating to ChangeVarNames (20130210151332)
+Migrating to AddFestivalIdToShows (20130210191902)
+Migrating to AddDescriptionToShows (20130215191844)
+Migrating to AddPhotosToShows (20130215193850)
+Migrating to AddVideos (20130215212235)
+Migrating to AddShowIdToVideos (20130215212833)
+Migrating to CreateDeletedItems (20130216215937)
+Migrating to AddPhotoToShows (20130310153523)
+Migrating to CreateFeedbackTable (20130413191216)
+Migrating to CreateFeedbacks (20130413193829)
+Migrating to DeleteFeedbackTable (20130413200056)
+Migrating to AddEmailToFeedbacks (20130414153429)
+Migrating to CreateAboutUsTable (20130418214909)
+Migrating to CreateAds (20130619202347)
+Migrating to ChangeAds (20130619204132)
+
+
+Started GET "/festivals.json" for 127.0.0.1 at 2013-09-17 13:11:51 +0100
+Processing by FestivalsController#index as JSON
+Completed 200 OK in 1386ms (Views: 1044.1ms | ActiveRecord: 35.0ms)
